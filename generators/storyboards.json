@@ -1,0 +1,585 @@
+{
+  "fps": 30,
+  "durationInFrames": 660,
+  "videos": [
+    {
+      "id": "Video1-MentalNoise",
+      "titleFr": "Le Piège du Bruit Mental",
+      "titleEn": "The Mental Noise Trap",
+      "accent": "#FF1E1E",
+      "music": "02_Drone_A_Minor_Void_Loop_10s.wav",
+      "scenes": [
+        {
+          "from": 0,
+          "to": 120,
+          "voFr": "Ton cerveau n'est pas fatigué. Il est saturé.",
+          "voEn": "Your brain isn't tired. It's overloaded.",
+          "visual": "Le cerveau se trace au centre (Trim Paths 25 images). Une batterie rouge à 10 % apparaît dessous et clignote. Zoom caméra 100 % -> 108 %.",
+          "sfx": [
+            {
+              "frame": 0,
+              "file": "01_Sub_Drop_Abyss_95-26Hz.wav",
+              "note": "Impact d'ouverture"
+            },
+            {
+              "frame": 50,
+              "file": "03_Click_Digital_UI_Tick.wav",
+              "note": "Apparition batterie"
+            }
+          ]
+        },
+        {
+          "from": 120,
+          "to": 270,
+          "voFr": "Douze priorités. Zéro direction.",
+          "voEn": "Twelve priorities. Zero direction.",
+          "visual": "Match cut : la batterie se réduit en un point central. 12 flèches jaillissent dans 12 directions et vibrent (line boil).",
+          "sfx": [
+            {
+              "frame": 120,
+              "file": "02_Whoosh_Quick_Cut_0.4s.wav",
+              "note": "Match cut"
+            },
+            {
+              "frame": 135,
+              "file": "01_Click_Mechanical_Switch.wav",
+              "note": "Jaillissement des flèches"
+            }
+          ]
+        },
+        {
+          "from": 270,
+          "to": 420,
+          "voFr": "Chaque onglet ouvert vole un peu de ton énergie.",
+          "voEn": "Every open tab steals a little of your energy.",
+          "visual": "5 fenêtres d'onglets s'empilent en cascade avec un Pop-In 220 % -> 100 %, une toutes les 18 images.",
+          "sfx": [
+            {
+              "frame": 270,
+              "file": "04_Whoosh_Camera_Push_0.8s.wav",
+              "note": "Transition"
+            },
+            {
+              "frame": 284,
+              "file": "02_Click_Typewriter_Key.wav",
+              "note": "Fenêtre 1"
+            },
+            {
+              "frame": 302,
+              "file": "02_Click_Typewriter_Key.wav",
+              "note": "Fenêtre 2"
+            },
+            {
+              "frame": 320,
+              "file": "02_Click_Typewriter_Key.wav",
+              "note": "Fenêtre 3"
+            },
+            {
+              "frame": 338,
+              "file": "02_Click_Typewriter_Key.wav",
+              "note": "Fenêtre 4"
+            },
+            {
+              "frame": 356,
+              "file": "04_Click_Heavy_Keystroke.wav",
+              "note": "Fenêtre 5"
+            },
+            {
+              "frame": 330,
+              "file": "01_Riser_Tension_Build_3.0s.wav",
+              "note": "Montée vers la ligne rouge"
+            }
+          ]
+        },
+        {
+          "from": 420,
+          "to": 660,
+          "voFr": "Ferme tout. Choisis une seule chose. Exécute.",
+          "voEn": "Close everything. Pick one thing. Execute.",
+          "visual": "Les fenêtres disparaissent. Une ligne rouge lumineuse traverse l'écran de gauche à droite jusqu'à une cible. Impact, puis le mot EXECUTE s'écrit lettre par lettre.",
+          "sfx": [
+            {
+              "frame": 420,
+              "file": "07_Whoosh_Deep_Transition_1.2s.wav",
+              "note": "Ligne rouge"
+            },
+            {
+              "frame": 470,
+              "file": "05_Sub_Drop_Punch_120-35Hz.wav",
+              "note": "Impact cible"
+            },
+            {
+              "frame": 500,
+              "file": "02_Click_Typewriter_Key.wav",
+              "note": "Texte EXECUTE"
+            }
+          ]
+        }
+      ],
+      "durationInFrames": 660,
+      "bonus": false
+    },
+    {
+      "id": "Video2-MotivationIllusion",
+      "titleFr": "L'Illusion de la Motivation",
+      "titleEn": "The Motivation Illusion",
+      "accent": "#FFC72C",
+      "music": "01_Drone_D_Minor_Abyss_Loop_10s.wav",
+      "scenes": [
+        {
+          "from": 0,
+          "to": 120,
+          "voFr": "La motivation dure 72 heures.",
+          "voEn": "Motivation lasts 72 hours.",
+          "visual": "Une horloge minimaliste se trace, ses aiguilles tournent de plus en plus vite.",
+          "sfx": [
+            {
+              "frame": 0,
+              "file": "03_Sub_Drop_Impact_110-30Hz.wav",
+              "note": "Ouverture"
+            },
+            {
+              "frame": 30,
+              "file": "03_Click_Digital_UI_Tick.wav",
+              "note": "Tic"
+            },
+            {
+              "frame": 60,
+              "file": "03_Click_Digital_UI_Tick.wav",
+              "note": "Tic"
+            },
+            {
+              "frame": 90,
+              "file": "03_Click_Digital_UI_Tick.wav",
+              "note": "Tic"
+            }
+          ]
+        },
+        {
+          "from": 120,
+          "to": 300,
+          "voFr": "Elle monte vite... puis elle s'écrase.",
+          "voEn": "It rises fast... then it crashes.",
+          "visual": "Une courbe blanche monte en flèche puis percute un mur rouge et s'effondre. Secousse caméra à l'impact.",
+          "sfx": [
+            {
+              "frame": 120,
+              "file": "06_Whoosh_Air_Slice_0.5s.wav",
+              "note": "Transition"
+            },
+            {
+              "frame": 135,
+              "file": "02_Riser_Short_Snap_2.5s.wav",
+              "note": "Montée de la courbe"
+            },
+            {
+              "frame": 210,
+              "file": "02_Sub_Drop_Gravity_80-22Hz.wav",
+              "note": "Crash contre le mur"
+            }
+          ]
+        },
+        {
+          "from": 300,
+          "to": 480,
+          "voFr": "La discipline, elle, construit marche après marche.",
+          "voEn": "Discipline builds, step by step.",
+          "visual": "Un escalier doré se construit marche par marche (6 marches, une toutes les 22 images), la caméra monte avec lui.",
+          "sfx": [
+            {
+              "frame": 300,
+              "file": "03_Whoosh_Heavy_Swing_1.0s.wav",
+              "note": "Transition"
+            },
+            {
+              "frame": 320,
+              "file": "05_Click_Soft_Tap.wav",
+              "note": "Marche 1"
+            },
+            {
+              "frame": 342,
+              "file": "05_Click_Soft_Tap.wav",
+              "note": "Marche 2"
+            },
+            {
+              "frame": 364,
+              "file": "05_Click_Soft_Tap.wav",
+              "note": "Marche 3"
+            },
+            {
+              "frame": 386,
+              "file": "05_Click_Soft_Tap.wav",
+              "note": "Marche 4"
+            },
+            {
+              "frame": 408,
+              "file": "05_Click_Soft_Tap.wav",
+              "note": "Marche 5"
+            },
+            {
+              "frame": 430,
+              "file": "04_Click_Heavy_Keystroke.wav",
+              "note": "Marche 6"
+            }
+          ]
+        },
+        {
+          "from": 480,
+          "to": 660,
+          "voFr": "1 % chaque jour. C'est tout.",
+          "voEn": "1% every day. That's all.",
+          "visual": "Dézoom massif (scale 100 % -> 35 %) : l'escalier n'était qu'un détail d'une montagne géométrique. Texte 1% EVERY DAY.",
+          "sfx": [
+            {
+              "frame": 480,
+              "file": "07_Whoosh_Deep_Transition_1.2s.wav",
+              "note": "Dézoom"
+            },
+            {
+              "frame": 540,
+              "file": "06_Sub_Drop_Monolith_88-28Hz.wav",
+              "note": "Révélation montagne"
+            },
+            {
+              "frame": 560,
+              "file": "02_Click_Typewriter_Key.wav",
+              "note": "Texte"
+            }
+          ]
+        }
+      ],
+      "durationInFrames": 660,
+      "bonus": false
+    },
+    {
+      "id": "Video3-PriceOfDifference",
+      "titleFr": "Le Prix de la Différence",
+      "titleEn": "The Price of Being Different",
+      "accent": "#FFC72C",
+      "music": "03_Drone_E_Minor_Stoic_Loop_10s.wav",
+      "scenes": [
+        {
+          "from": 0,
+          "to": 120,
+          "voFr": "Être différent a un prix.",
+          "voEn": "Being different has a price.",
+          "visual": "Un cercle blanc isolé au centre, respiration lente (échelle 100 % <-> 104 %).",
+          "sfx": [
+            {
+              "frame": 0,
+              "file": "04_Sub_Drop_Deep_Space_70-24Hz.wav",
+              "note": "Ouverture"
+            }
+          ]
+        },
+        {
+          "from": 120,
+          "to": 330,
+          "voFr": "Les autres restent dans le confort. Toi, tu traces ta route.",
+          "voEn": "Others stay in comfort. You draw your own path.",
+          "visual": "Une boîte grise COMFORT apparaît avec 30 points gris. Le cercle blanc sort et trace une route en pointillés vers le haut de l'écran.",
+          "sfx": [
+            {
+              "frame": 120,
+              "file": "01_Whoosh_Shadow_Pass_0.6s.wav",
+              "note": "Boîte"
+            },
+            {
+              "frame": 150,
+              "file": "03_Click_Digital_UI_Tick.wav",
+              "note": "Points"
+            },
+            {
+              "frame": 210,
+              "file": "05_Whoosh_Reverse_Suck_0.9s.wav",
+              "note": "Départ de la route"
+            }
+          ]
+        },
+        {
+          "from": 330,
+          "to": 510,
+          "voFr": "Le prix : la solitude. La récompense : tout le reste.",
+          "voEn": "The price: solitude. The reward: everything else.",
+          "visual": "Au bout de la route, une structure géométrique dorée (hexagone + étoile + cercles) se construit trait par trait.",
+          "sfx": [
+            {
+              "frame": 330,
+              "file": "05_Riser_Reveal_Hit_3.2s.wav",
+              "note": "Construction"
+            },
+            {
+              "frame": 426,
+              "file": "01_Sub_Drop_Abyss_95-26Hz.wav",
+              "note": "Structure complète"
+            }
+          ]
+        },
+        {
+          "from": 510,
+          "to": 660,
+          "voFr": "Travaille en silence.",
+          "voEn": "Work in silence.",
+          "visual": "Le mot SILENCE. s'écrit, tout s'efface, et la scène se referme sur le cercle blanc isolé : la dernière image est identique à la première (boucle parfaite).",
+          "sfx": [
+            {
+              "frame": 510,
+              "file": "08_Whoosh_Match_Cut_0.7s.wav",
+              "note": "Transition"
+            },
+            {
+              "frame": 530,
+              "file": "02_Click_Typewriter_Key.wav",
+              "note": "Texte SILENCE."
+            },
+            {
+              "frame": 600,
+              "file": "06_Click_Typewriter_Return_Bell.wav",
+              "note": "Retour boucle"
+            }
+          ]
+        }
+      ],
+      "durationInFrames": 660,
+      "bonus": false
+    },
+    {
+      "id": "Video4-PaycheckTrap",
+      "titleFr": "Le Piège du Salaire",
+      "titleEn": "The Paycheck Trap",
+      "accent": "#FFC72C",
+      "music": "04_Drone_C_Minor_Monolith_Loop_10s.wav",
+      "durationInFrames": 1830,
+      "bonus": true,
+      "scenes": [
+        {
+          "from": 0,
+          "to": 210,
+          "voFr": "Tu peux gagner 5 000 € par mois... et rester pauvre toute ta vie.",
+          "voEn": "You can earn 5,000 a month... and stay broke your whole life.",
+          "visual": "Une pièce € se trace au centre, un compteur monte jusqu'à 5 000 €, puis une fissure rouge traverse la pièce.",
+          "sfx": [
+            {
+              "frame": 0,
+              "file": "01_Sub_Drop_Abyss_95-26Hz.wav",
+              "note": "Ouverture"
+            },
+            {
+              "frame": 30,
+              "file": "03_Click_Digital_UI_Tick.wav",
+              "note": "Compteur"
+            },
+            {
+              "frame": 55,
+              "file": "03_Click_Digital_UI_Tick.wav",
+              "note": "Compteur"
+            },
+            {
+              "frame": 80,
+              "file": "04_Click_Heavy_Keystroke.wav",
+              "note": "5 000 €"
+            },
+            {
+              "frame": 135,
+              "file": "05_Sub_Drop_Punch_120-35Hz.wav",
+              "note": "Fissure"
+            }
+          ]
+        },
+        {
+          "from": 210,
+          "to": 450,
+          "voFr": "Le salaire tombe le 1er. Le 5, il a déjà disparu.",
+          "voEn": "Payday is the 1st. By the 5th, it's gone.",
+          "visual": "La pièce se divise en 4 flèches vers LOYER, CRÉDIT, ABONNEMENTS, ACHATS. La barre de solde se vide jusqu'à 0 € et vire au rouge.",
+          "sfx": [
+            {
+              "frame": 210,
+              "file": "02_Whoosh_Quick_Cut_0.4s.wav",
+              "note": "Coupe"
+            },
+            {
+              "frame": 245,
+              "file": "02_Click_Typewriter_Key.wav",
+              "note": "Loyer"
+            },
+            {
+              "frame": 260,
+              "file": "02_Click_Typewriter_Key.wav",
+              "note": "Crédit"
+            },
+            {
+              "frame": 275,
+              "file": "02_Click_Typewriter_Key.wav",
+              "note": "Abonnements"
+            },
+            {
+              "frame": 290,
+              "file": "02_Click_Typewriter_Key.wav",
+              "note": "Achats"
+            },
+            {
+              "frame": 400,
+              "file": "02_Sub_Drop_Gravity_80-22Hz.wav",
+              "note": "Solde à zéro"
+            }
+          ]
+        },
+        {
+          "from": 450,
+          "to": 690,
+          "voFr": "C'est la course du rat : travailler, payer, recommencer.",
+          "voEn": "It's the rat race: work, pay, repeat.",
+          "visual": "Une boucle TRAVAILLER → PAYER → RECOMMENCER ; un point rouge la parcourt de plus en plus vite (4 tours).",
+          "sfx": [
+            {
+              "frame": 450,
+              "file": "04_Whoosh_Camera_Push_0.8s.wav",
+              "note": "Transition"
+            },
+            {
+              "frame": 580,
+              "file": "03_Click_Digital_UI_Tick.wav",
+              "note": "Tour 1"
+            },
+            {
+              "frame": 621,
+              "file": "03_Click_Digital_UI_Tick.wav",
+              "note": "Tour 2"
+            },
+            {
+              "frame": 653,
+              "file": "01_Click_Mechanical_Switch.wav",
+              "note": "Tour 3"
+            },
+            {
+              "frame": 680,
+              "file": "04_Click_Heavy_Keystroke.wav",
+              "note": "Tour 4"
+            }
+          ]
+        },
+        {
+          "from": 690,
+          "to": 960,
+          "voFr": "Les riches n'achètent pas des choses. Ils achètent ce qui leur rapporte.",
+          "voEn": "The rich don't buy things. They buy what pays them.",
+          "visual": "Écran partagé : à gauche PASSIF, l'argent sort (flèches rouges) ; à droite ACTIF, l'argent entre dans un diamant doré.",
+          "sfx": [
+            {
+              "frame": 690,
+              "file": "08_Whoosh_Match_Cut_0.7s.wav",
+              "note": "Match cut"
+            },
+            {
+              "frame": 712,
+              "file": "04_Click_Heavy_Keystroke.wav",
+              "note": "Passif"
+            },
+            {
+              "frame": 800,
+              "file": "06_Whoosh_Air_Slice_0.5s.wav",
+              "note": "Actif"
+            },
+            {
+              "frame": 830,
+              "file": "03_Sub_Drop_Impact_110-30Hz.wav",
+              "note": "Flux entrant"
+            }
+          ]
+        },
+        {
+          "from": 960,
+          "to": 1200,
+          "voFr": "100 € par mois. Placés à 8 % par an. Pendant 30 ans.",
+          "voEn": "100 a month. At 8% a year. For 30 years.",
+          "visual": "Trois valeurs s'écrivent l'une sous l'autre : 100 €/MOIS, 8 %/AN, 30 ANS. Mention : rendement hypothétique.",
+          "sfx": [
+            {
+              "frame": 970,
+              "file": "02_Click_Typewriter_Key.wav",
+              "note": "100 €"
+            },
+            {
+              "frame": 1030,
+              "file": "02_Click_Typewriter_Key.wav",
+              "note": "8 %"
+            },
+            {
+              "frame": 1090,
+              "file": "04_Click_Heavy_Keystroke.wav",
+              "note": "30 ans"
+            }
+          ]
+        },
+        {
+          "from": 1200,
+          "to": 1470,
+          "voFr": "Résultat : 149 000 €. Dont 113 000 € que tu n'as jamais eu à gagner.",
+          "voEn": "Result: 149,000. Of which 113,000 you never had to earn.",
+          "visual": "Graphique sur 30 ans : versements (ligne blanche) vs capital (courbe dorée exponentielle). Le compteur monte à 149 036 €.",
+          "sfx": [
+            {
+              "frame": 1200,
+              "file": "03_Riser_Long_Suspense_4.0s.wav",
+              "note": "Montée"
+            },
+            {
+              "frame": 1320,
+              "file": "06_Sub_Drop_Monolith_88-28Hz.wav",
+              "note": "149 036 €"
+            },
+            {
+              "frame": 1350,
+              "file": "02_Click_Typewriter_Key.wav",
+              "note": "Intérêts"
+            }
+          ]
+        },
+        {
+          "from": 1470,
+          "to": 1680,
+          "voFr": "Ton plus gros levier, ce n'est pas ton salaire. C'est le temps.",
+          "voEn": "Your biggest lever isn't your salary. It's time.",
+          "visual": "Un levier : un petit sablier sur le bras long soulève une énorme pièce €.",
+          "sfx": [
+            {
+              "frame": 1470,
+              "file": "03_Whoosh_Heavy_Swing_1.0s.wav",
+              "note": "Transition"
+            },
+            {
+              "frame": 1560,
+              "file": "04_Sub_Drop_Deep_Space_70-24Hz.wav",
+              "note": "Le levier bascule"
+            }
+          ]
+        },
+        {
+          "from": 1680,
+          "to": 1830,
+          "voFr": "Commence aujourd'hui. Même avec 10 €.",
+          "voEn": "Start today. Even with 10.",
+          "visual": "COMMENCE AUJOURD'HUI. s'écrit, puis une petite pièce € apparaît au centre.",
+          "sfx": [
+            {
+              "frame": 1680,
+              "file": "07_Whoosh_Deep_Transition_1.2s.wav",
+              "note": "Transition"
+            },
+            {
+              "frame": 1700,
+              "file": "02_Click_Typewriter_Key.wav",
+              "note": "Texte"
+            },
+            {
+              "frame": 1775,
+              "file": "06_Click_Typewriter_Return_Bell.wav",
+              "note": "Pièce"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

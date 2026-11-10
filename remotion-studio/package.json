@@ -1,0 +1,26 @@
+{
+  "name": "remotion-studio-minimalist-viral",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Moteur d'animation minimaliste et 3 videos virales (1080x1920, 30 fps)",
+  "scripts": {
+    "studio": "remotion studio src/index.ts",
+    "typecheck": "tsc --noEmit",
+    "render:video1": "remotion render src/index.ts Video1-MentalNoise out/Video1_MentalNoise.mp4",
+    "render:video2": "remotion render src/index.ts Video2-MotivationIllusion out/Video2_MotivationIllusion.mp4",
+    "render:video3": "remotion render src/index.ts Video3-PriceOfDifference out/Video3_PriceOfDifference.mp4",
+    "render:video4": "remotion render src/index.ts Video4-PaycheckTrap out/Video4_PaycheckTrap.mp4",
+    "render-all": "npm run render:video1 && npm run render:video2 && npm run render:video3 && npm run render:video4",
+    "preview": "remotion still src/index.ts Video1-MentalNoise out/preview_video1.png --frame=500"
+  },
+  "dependencies": {
+    "@remotion/cli": "4.0.538",
+    "react": "18.3.1",
+    "react-dom": "18.3.1",
+    "remotion": "4.0.538"
+  },
+  "devDependencies": {
+    "@types/react": "18.3.12",
+    "typescript": "5.6.3"
+  }
+}

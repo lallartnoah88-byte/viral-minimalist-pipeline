@@ -1,0 +1,122 @@
+=====================================================================
+  MINIMALIST VIRAL SETUP - Plugin After Effects (ScriptUI)
+  Dark Minimalist Viral Animation Pack
+=====================================================================
+
+---------------------------------------------------------------------
+  FRANCAIS
+---------------------------------------------------------------------
+
+COMPATIBILITE
+  - Adobe After Effects CC 2018 et versions ulterieures (Windows / macOS).
+  - Fonctionne quelle que soit la langue d'installation (francais, anglais,
+    allemand...) : le script utilise les "matchNames" internes d'Adobe.
+
+INSTALLATION EN PANNEAU ANCRABLE (recommande)
+  1. Fermez After Effects.
+  2. Copiez "Minimalist_Viral_Setup.jsx" dans le dossier :
+     Windows : C:\Program Files\Adobe\Adobe After Effects <version>\Support Files\Scripts\ScriptUI Panels\
+     macOS   : /Applications/Adobe After Effects <version>/Scripts/ScriptUI Panels/
+  3. Relancez After Effects.
+  4. Menu Fenetre > Minimalist_Viral_Setup.jsx : le panneau s'ouvre et peut etre
+     ancre dans votre espace de travail.
+
+UTILISATION SANS INSTALLATION (fenetre flottante)
+  Fichier > Scripts > Executer le fichier de script... > choisissez le .jsx
+
+AUTORISATION A ACTIVER UNE SEULE FOIS
+  Modifier > Preferences > Scripts et expressions (macOS : After Effects > Reglages)
+  > cochez "Autoriser les scripts a ecrire des fichiers et a acceder au reseau".
+
+LES 5 BOUTONS
+  1. Creer Comp & Fond Grille (1080x1920)
+     Cree la composition "00_VIRAL_REEL_MAIN" (1080x1920, 30 i/s, 30 s, fond #070707,
+     flou de mouvement active), le solide "BG_DARK" et le solide "BG_GRID"
+     (effet Grille, opacite 4 %, masque elliptique avec contour progressif de 450 px).
+
+  2. Ajouter la Pile de 4 Effets (Look Signature)
+     Ajoute 4 calques d'effets en haut de la composition :
+       FX_04_NOISE            Bruit 6 %, bruit couleur desactive
+       FX_03_POSTERIZE_15FPS  Postereffet temporel a 15 i/s
+       FX_02_LINE_BOIL        Deplacement turbulent (Quantite 4, Taille 15,
+                              expression "time*250" sur l'Evolution)
+       FX_01_DOUBLE_GLOW      Deux effets Lueur (60 % / 25 / 1.2 et 40 % / 120 / 0.6)
+
+  3. Creer Rig Camera 3D (Null Controller)
+     Cree l'objet nul 3D "CAMERA_CONTROLLER_3D" et y parente automatiquement tous
+     les calques de forme 3D de la composition. Animez la position / rotation /
+     echelle du nul pour deplacer toute la scene.
+
+  4. Animer Trace (Trim Paths + Speed Graph 75/85)
+     Selectionnez un ou plusieurs calques de forme, placez l'indicateur de temps,
+     puis cliquez. Ajoute "Raccourcir les traces" avec Fin = 0 % -> 100 % sur
+     25 images, influence 75 % en sortie et 85 % en entree.
+
+  5. Appliquer Pop-In Scale (Hook 220% -> 100%)
+     Selectionnez un ou plusieurs calques : echelle 220 % -> 100 % sur 20 images,
+     meme courbe de vitesse 75 % / 85 %.
+
+  Chaque bouton est annulable en une seule fois avec Ctrl+Z / Cmd+Z.
+
+DEPANNAGE
+  - "Ouvrez d'abord une composition" : cliquez dans la timeline de votre comp
+    avant d'utiliser les boutons 4 et 5.
+  - Le panneau n'apparait pas dans le menu Fenetre : verifiez que le fichier est
+    bien dans "ScriptUI Panels" (et non dans "Scripts") puis redemarrez AE.
+
+---------------------------------------------------------------------
+  ENGLISH
+---------------------------------------------------------------------
+
+COMPATIBILITY
+  - Adobe After Effects CC 2018 or later (Windows / macOS).
+  - Works in any interface language: the script relies on Adobe's internal
+    "matchNames" instead of localized effect names.
+
+DOCKABLE PANEL INSTALLATION (recommended)
+  1. Quit After Effects.
+  2. Copy "Minimalist_Viral_Setup.jsx" into:
+     Windows: C:\Program Files\Adobe\Adobe After Effects <version>\Support Files\Scripts\ScriptUI Panels\
+     macOS:   /Applications/Adobe After Effects <version>/Scripts/ScriptUI Panels/
+  3. Restart After Effects.
+  4. Window > Minimalist_Viral_Setup.jsx: the panel opens and can be docked.
+
+RUN WITHOUT INSTALLING (floating window)
+  File > Scripts > Run Script File... > select the .jsx
+
+ONE-TIME PERMISSION
+  Edit > Preferences > Scripting & Expressions (macOS: After Effects > Settings)
+  > enable "Allow Scripts to Write Files and Access Network".
+
+THE 5 BUTTONS
+  1. Create Comp & Grid Background (1080x1920)
+     Creates "00_VIRAL_REEL_MAIN" (1080x1920, 30 fps, 30 s, #070707 background,
+     motion blur on), the "BG_DARK" solid and the "BG_GRID" solid (Grid effect,
+     4 % opacity, elliptical mask with 450 px feather).
+
+  2. Add the 4-Effect Stack (Signature Look)
+     Adds 4 adjustment layers on top:
+       FX_04_NOISE            Noise 6 %, color noise off
+       FX_03_POSTERIZE_15FPS  Posterize Time at 15 fps
+       FX_02_LINE_BOIL        Turbulent Displace (Amount 4, Size 15,
+                              "time*250" expression on Evolution)
+       FX_01_DOUBLE_GLOW      Two Glow effects (60 % / 25 / 1.2 and 40 % / 120 / 0.6)
+
+  3. Create 3D Camera Rig (Null Controller)
+     Creates the 3D null "CAMERA_CONTROLLER_3D" and parents every 3D shape layer
+     of the comp to it. Animate the null to move the whole scene.
+
+  4. Animate Trace (Trim Paths + Speed Graph 75/85)
+     Select shape layers, park the time indicator, click. Adds Trim Paths with
+     End = 0 % -> 100 % over 25 frames, 75 % outgoing / 85 % incoming influence.
+
+  5. Apply Pop-In Scale (Hook 220% -> 100%)
+     Select layers: scale 220 % -> 100 % over 20 frames with the same 75 / 85 curve.
+
+  Every button is a single undo step (Ctrl+Z / Cmd+Z).
+
+TROUBLESHOOTING
+  - "Open a composition first": click inside your comp's timeline before using
+    buttons 4 and 5.
+  - Panel missing from the Window menu: make sure the file sits in
+    "ScriptUI Panels" (not "Scripts") and restart AE.
