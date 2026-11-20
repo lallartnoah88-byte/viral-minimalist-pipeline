@@ -7,6 +7,8 @@ import { GlowingSvgPath } from '../components/GlowingSvgPath';
 import { MinimalCanvas } from '../components/MinimalCanvas';
 import { getVideo, SfxTrack } from '../components/SfxTrack';
 import { TypewriterText } from '../components/TypewriterText';
+import { Caption } from '../components/Caption';
+import { V3_EXTRA } from './extended/Video3Extended';
 
 const ID = 'Video3-PriceOfDifference' as const;
 const SCENES = getVideo(ID).scenes;
@@ -124,13 +126,23 @@ const Silence: React.FC = () => {
 };
 
 export const Video3_PriceOfDifference: React.FC = () => {
-  const [s1, s2, , s4] = SCENES;
+  const [s1, s2, s3, , , , , s4] = SCENES;
   return (
     <AbsoluteFill>
       <MinimalCanvas>
         <Sequence from={s1.from} durationInFrames={s1.to - s1.from}><Isolated /></Sequence>
         {/* Scènes 2 et 3 : un seul plan, la caméra suit le cercle jusqu'à la structure dorée. */}
-        <Sequence from={s2.from} durationInFrames={s4.from - s2.from}><Journey /></Sequence>
+        <Sequence from={s2.from} durationInFrames={s3.to - s2.from}><Journey /></Sequence>
+        {V3_EXTRA.map((Scene, i) => {
+          const sc = SCENES[3 + i];
+          const duration = sc.to - sc.from;
+          return (
+            <Sequence key={i} from={sc.from} durationInFrames={duration}>
+              <Scene />
+              <Caption text={sc.voFr} duration={duration} />
+            </Sequence>
+          );
+        })}
         <Sequence from={s4.from} durationInFrames={s4.to - s4.from}><Silence /></Sequence>
       </MinimalCanvas>
       <SfxTrack id={ID} />

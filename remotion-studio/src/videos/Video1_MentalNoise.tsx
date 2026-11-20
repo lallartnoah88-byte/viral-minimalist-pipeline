@@ -22,6 +22,8 @@ import { GlowingSvgPath } from '../components/GlowingSvgPath';
 import { MinimalCanvas } from '../components/MinimalCanvas';
 import { getVideo, SfxTrack } from '../components/SfxTrack';
 import { TypewriterText } from '../components/TypewriterText';
+import { Caption } from '../components/Caption';
+import { V1_EXTRA } from './extended/Video1Extended';
 
 const ID = 'Video1-MentalNoise' as const;
 const SCENES = getVideo(ID).scenes;
@@ -158,14 +160,31 @@ const Execute: React.FC = () => {
   );
 };
 
+/* Scènes 4 à 7 (format TikTok 66 s) avec sous-titres mot par mot. */
+const ExtraScenes: React.FC = () => (
+  <>
+    {V1_EXTRA.map((Scene, i) => {
+      const sc = SCENES[3 + i];
+      const duration = sc.to - sc.from;
+      return (
+        <Sequence key={i} from={sc.from} durationInFrames={duration}>
+          <Scene />
+          <Caption text={sc.voFr} duration={duration} />
+        </Sequence>
+      );
+    })}
+  </>
+);
+
 export const Video1_MentalNoise: React.FC = () => {
-  const [s1, s2, s3, s4] = SCENES;
+  const [s1, s2, s3, , , , , s4] = SCENES;
   return (
     <AbsoluteFill>
       <MinimalCanvas>
         <Sequence from={s1.from} durationInFrames={s1.to - s1.from}><BrainBattery /></Sequence>
         <Sequence from={s2.from} durationInFrames={s2.to - s2.from}><ScatteredArrows /></Sequence>
         <Sequence from={s3.from} durationInFrames={s3.to - s3.from}><OpenTabs /></Sequence>
+        <ExtraScenes />
         <Sequence from={s4.from} durationInFrames={s4.to - s4.from}><Execute /></Sequence>
       </MinimalCanvas>
       <SfxTrack id={ID} />

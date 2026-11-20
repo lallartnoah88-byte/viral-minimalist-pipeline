@@ -7,6 +7,8 @@ import { GlowingSvgPath } from '../components/GlowingSvgPath';
 import { MinimalCanvas } from '../components/MinimalCanvas';
 import { getVideo, SfxTrack } from '../components/SfxTrack';
 import { TypewriterText } from '../components/TypewriterText';
+import { Caption } from '../components/Caption';
+import { V2_EXTRA } from './extended/Video2Extended';
 
 const ID = 'Video2-MotivationIllusion' as const;
 const SCENES = getVideo(ID).scenes;
@@ -110,14 +112,28 @@ const MountainReveal: React.FC = () => {
 };
 
 export const Video2_MotivationIllusion: React.FC = () => {
-  const [s1, s2, s3, s4] = SCENES;
+  const [s1, s2, s3, , , , , s4] = SCENES;
+  const stairs = s3.to - s3.from;
   return (
     <AbsoluteFill>
       <MinimalCanvas>
         <Sequence from={s1.from} durationInFrames={s1.to - s1.from}><FastClock /></Sequence>
         <Sequence from={s2.from} durationInFrames={s2.to - s2.from}><CrashCurve /></Sequence>
-        {/* Les scènes 3 et 4 partagent le même monde : la caméra dézoome de l'escalier vers la montagne. */}
-        <Sequence from={s3.from} durationInFrames={s4.to - s3.from}><MountainReveal /></Sequence>
+        {/* Les scènes 3 et 8 partagent le même plan : l'escalier, puis (après les scènes 4-7) le dézoom vers la montagne. */}
+        <Sequence from={s3.from} durationInFrames={stairs}><MountainReveal /></Sequence>
+        {V2_EXTRA.map((Scene, i) => {
+          const sc = SCENES[3 + i];
+          const duration = sc.to - sc.from;
+          return (
+            <Sequence key={i} from={sc.from} durationInFrames={duration}>
+              <Scene />
+              <Caption text={sc.voFr} duration={duration} />
+            </Sequence>
+          );
+        })}
+        <Sequence from={s4.from} durationInFrames={s4.to - s4.from}>
+          <Sequence from={-stairs}><MountainReveal /></Sequence>
+        </Sequence>
       </MinimalCanvas>
       <SfxTrack id={ID} />
     </AbsoluteFill>

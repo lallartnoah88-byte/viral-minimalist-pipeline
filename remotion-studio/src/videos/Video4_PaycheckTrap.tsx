@@ -7,6 +7,7 @@ import { GlowingSvgPath, GlowColor } from '../components/GlowingSvgPath';
 import { MinimalCanvas } from '../components/MinimalCanvas';
 import { getVideo, SfxTrack } from '../components/SfxTrack';
 import { FONT_STACK, TypewriterText } from '../components/TypewriterText';
+import { Caption } from '../components/Caption';
 
 /*
  * Vidéo bonus — « Le Piège du Salaire » (thème argent), 61 s = 1830 images à 30 fps.
@@ -110,38 +111,6 @@ const Counter: React.FC<{ from: number; to: number; start: number; end: number; 
 };
 
 /** Sous-titre révélé mot par mot (remplace la voix-off). */
-const Caption: React.FC<{ text: string; duration: number }> = ({ text, duration }) => {
-  const f = useCurrentFrame();
-  const words = text.split(' ');
-  const revealEnd = Math.min(duration - 20, 18 + words.length * 7);
-  const shown = Math.floor(lin(f, 6, revealEnd, 0, words.length));
-  const out = lin(f, duration - 8, duration, 1, 0);
-  return (
-    <div
-      style={{
-        position: 'absolute',
-        left: 70,
-        right: 70,
-        top: 1600,
-        textAlign: 'center',
-        fontFamily: FONT_STACK,
-        fontWeight: 700,
-        fontSize: 50,
-        lineHeight: 1.3,
-        color: COLORS.white,
-        opacity: out,
-        textShadow: '0 0 12px rgba(255,255,255,0.45)',
-      }}
-    >
-      {words.map((w, i) => (
-        <span key={i} style={{ opacity: i < shown ? 1 : 0 }}>
-          {w}
-          {i < words.length - 1 ? ' ' : ''}
-        </span>
-      ))}
-    </div>
-  );
-};
 
 /* 1. 5 000 € par mois… et pauvre ------------------------------------------------- */
 const Hook: React.FC = () => {

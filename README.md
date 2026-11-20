@@ -41,7 +41,7 @@ npm run typecheck   # tsc --noEmit
 npm run render-all  # render every composition to out/
 ```
 
-Compositions: `Video1-MentalNoise`, `Video2-MotivationIllusion`, `Video3-PriceOfDifference` (22 s each) and `Video4-PaycheckTrap` (61 s).
+Compositions: `Video1-MentalNoise`, `Video2-MotivationIllusion`, `Video3-PriceOfDifference` (66 s each) and `Video4-PaycheckTrap` (61 s), all in TikTok format: 1080×1920, 30 fps, 61–90 s.
 
 ## Design decisions
 

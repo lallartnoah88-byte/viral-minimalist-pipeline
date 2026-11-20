@@ -26,7 +26,8 @@ Le PDF du guide utilise Playwright/Chromium s'il est installé, sinon le HTML re
 | `generators/storyboards.json` | **Source unique** des 3 storyboards (timecodes, voix FR/EN, visuels, SFX) — utilisée par le guide ET par Remotion |
 | `generators/generate_docs.js` | Guide `MASTERCLASS_VIRAL_ANIMATIONS.html/.pdf` (7 modules), copie du plugin, `COPIE_PAGE_DE_VENTE.md` |
 | `DIST_PACK_TO_SELL/` | Sortie : pack, ZIP client, mockup boutique, texte de vente |
-| `remotion-studio/` | Projet Remotion (React + TS) : composants + 3 vidéos 660 images, 1080×1920, 30 fps |
+| `remotion-studio/` | Projet Remotion (React + TS) : 4 vidéos format TikTok 1080×1920, 30 fps, 61–90 s (V1–V3 : 1980 images, V4 : 1830) |
+| `.claude/skills/` | Plugin **aiTrends 2D Studio** installé (`make-2d-video`, `new-video`, `render-video`, `video-sound`, `video-styles`), réglé par défaut sur TikTok (9:16, 30 fps, sous-titres, 61–90 s) |
 
 ## Règles à respecter
 
@@ -39,6 +40,7 @@ Le PDF du guide utilise Playwright/Chromium s'il est installé, sinon le HTML re
   `cubic-bezier(0.75, 0, 0.15, 1)` = influence 75 % / 85 % dans After Effects.
 - **Synchronisation son/image** : modifier un timing = modifier `storyboards.json` puis relancer `build_all.sh`
   (le guide et `SfxTrack` de Remotion relisent ce fichier).
+- **Format TikTok** : chaque vidéo dure entre 61 et 90 s (`build_all.sh` échoue sinon). Sous-titres dans la zone sûre (`components/Caption.tsx`, y ≈ 1480, marge droite 150 px pour les boutons).
 - **Mix 4 pistes** : voix -3 dB, impacts -10 dB, mouvements -12 dB, drone -24 dB (`remotion-studio/src/components/SfxTrack.tsx`).
 
 ## Remotion
@@ -52,6 +54,6 @@ npm run preview     # image fixe de contrôle
 npm run render-all  # 3 MP4 H.264 25 Mbps
 ```
 
-Compositions : `Video1-MentalNoise`, `Video2-MotivationIllusion`, `Video3-PriceOfDifference`.
+Compositions : `Video1-MentalNoise`, `Video2-MotivationIllusion`, `Video3-PriceOfDifference`, `Video4-PaycheckTrap`.
 Composants : `MinimalCanvas` (fond, grille, grain, line boil, postérisation 15 fps), `GlowingSvgPath`
 (tracé stroke-dashoffset + double lueur), `TypewriterText` (JetBrains Mono + curseur), `CameraRig` (pan/zoom/secousses).

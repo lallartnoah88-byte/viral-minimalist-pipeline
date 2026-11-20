@@ -112,7 +112,16 @@ walk(process.argv[1]);
 const missing = [];
 for (const v of story.videos) for (const f of [v.music, ...v.scenes.flatMap((s) => s.sfx.map((x) => x.file))]) if (!have.has(f)) missing.push(v.id + " -> " + f);
 if (missing.length) { console.error("SFX introuvables :\n  " + missing.join("\n  ")); process.exit(1); }
+const bad = [];
+for (const v of story.videos) {
+  const sec = v.durationInFrames / story.fps;
+  if (sec < 61 || sec > 90) bad.push(v.id + " : " + sec + " s");
+  v.scenes.forEach((s, i) => { if (i > 0 && s.from !== v.scenes[i - 1].to) bad.push(v.id + " : scène " + (i + 1) + " non contiguë"); });
+  if (v.scenes[v.scenes.length - 1].to !== v.durationInFrames) bad.push(v.id + " : la dernière scène ne finit pas à durationInFrames");
+}
+if (bad.length) { console.error("Format TikTok (61-90 s) non respecté :\n  " + bad.join("\n  ")); process.exit(1); }
 console.log("\x1b[32m✓\x1b[0m Storyboards : toutes les références SFX existent");
+console.log("\x1b[32m✓\x1b[0m Format TikTok : " + story.videos.map((v) => v.durationInFrames / story.fps + " s").join(" · ") + " (61-90 s, 1080x1920, 30 fps)");
 ' "$PACK/03_Sound_Design_SFX_WAV" || fail "Storyboards incohérents avec la bibliothèque SFX"
 
 # --- 3. Archive ZIP ----------------------------------------------------------

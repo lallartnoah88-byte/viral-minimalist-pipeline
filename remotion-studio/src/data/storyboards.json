@@ -1,6 +1,6 @@
 {
   "fps": 30,
-  "durationInFrames": 660,
+  "durationInFrames": 1980,
   "videos": [
     {
       "id": "Video1-MentalNoise",
@@ -93,30 +93,121 @@
         },
         {
           "from": 420,
-          "to": 660,
+          "to": 750,
+          "voFr": "Ton téléphone vibre 96 fois par jour.",
+          "voEn": "Your phone buzzes 96 times a day.",
+          "visual": "Un smartphone se trace au centre. Le compteur de notifications monte de 0 à 96 en or, l'écran tremble à chaque palier.",
+          "sfx": [
+            {
+              "frame": 420,
+              "file": "02_Whoosh_Quick_Cut_0.4s.wav",
+              "note": "Transition"
+            },
+            {
+              "frame": 440,
+              "file": "03_Click_Digital_UI_Tick.wav",
+              "note": "Compteur"
+            },
+            {
+              "frame": 570,
+              "file": "03_Sub_Drop_Impact_110-30Hz.wav",
+              "note": "96"
+            }
+          ]
+        },
+        {
+          "from": 750,
+          "to": 1080,
+          "voFr": "Chaque interruption te coûte 23 minutes de concentration.",
+          "voEn": "Every interruption costs you 23 minutes of focus.",
+          "visual": "Un chronomètre se dessine ; une aiguille rouge balaie 23 minutes. Le chiffre 23 MIN s'écrit dessous.",
+          "sfx": [
+            {
+              "frame": 750,
+              "file": "04_Whoosh_Camera_Push_0.8s.wav",
+              "note": "Transition"
+            },
+            {
+              "frame": 780,
+              "file": "01_Riser_Tension_Build_3.0s.wav",
+              "note": "Montée"
+            },
+            {
+              "frame": 950,
+              "file": "02_Sub_Drop_Gravity_80-22Hz.wav",
+              "note": "Impact 23"
+            }
+          ]
+        },
+        {
+          "from": 1080,
+          "to": 1410,
+          "voFr": "Ton attention est fragmentée en mille morceaux.",
+          "voEn": "Your attention is broken into a thousand pieces.",
+          "visual": "Un cercle plein se fissure en 12 éclats qui s'écartent lentement du centre (line boil).",
+          "sfx": [
+            {
+              "frame": 1080,
+              "file": "08_Whoosh_Match_Cut_0.7s.wav",
+              "note": "Match cut"
+            },
+            {
+              "frame": 1140,
+              "file": "03_Whoosh_Heavy_Swing_1.0s.wav",
+              "note": "Explosion"
+            }
+          ]
+        },
+        {
+          "from": 1410,
+          "to": 1740,
+          "voFr": "Le silence n'est pas vide. C'est là que ton cerveau répare.",
+          "voEn": "Silence isn't empty. It's where your brain repairs itself.",
+          "visual": "Les éclats reviennent au centre et se ressoudent. Une onde blanche calme se propage, le mot SILENCE apparaît.",
+          "sfx": [
+            {
+              "frame": 1410,
+              "file": "05_Whoosh_Reverse_Suck_0.9s.wav",
+              "note": "Aspiration"
+            },
+            {
+              "frame": 1500,
+              "file": "05_Click_Soft_Tap.wav",
+              "note": "Recomposition"
+            },
+            {
+              "frame": 1560,
+              "file": "02_Click_Typewriter_Key.wav",
+              "note": "Texte"
+            }
+          ]
+        },
+        {
+          "from": 1740,
+          "to": 1980,
           "voFr": "Ferme tout. Choisis une seule chose. Exécute.",
           "voEn": "Close everything. Pick one thing. Execute.",
           "visual": "Les fenêtres disparaissent. Une ligne rouge lumineuse traverse l'écran de gauche à droite jusqu'à une cible. Impact, puis le mot EXECUTE s'écrit lettre par lettre.",
           "sfx": [
             {
-              "frame": 420,
+              "frame": 1740,
               "file": "07_Whoosh_Deep_Transition_1.2s.wav",
               "note": "Ligne rouge"
             },
             {
-              "frame": 470,
+              "frame": 1790,
               "file": "05_Sub_Drop_Punch_120-35Hz.wav",
               "note": "Impact cible"
             },
             {
-              "frame": 500,
+              "frame": 1820,
               "file": "02_Click_Typewriter_Key.wav",
               "note": "Texte EXECUTE"
             }
           ]
         }
       ],
-      "durationInFrames": 660,
+      "durationInFrames": 1980,
       "bonus": false
     },
     {
@@ -225,30 +316,126 @@
         },
         {
           "from": 480,
-          "to": 660,
+          "to": 810,
+          "voFr": "Tu attends d'avoir envie. Elle ne vient jamais.",
+          "voEn": "You wait to feel like it. It never comes.",
+          "visual": "Un sablier se trace ; le sable coule. Le texte ATTENTE clignote sous le sablier.",
+          "sfx": [
+            {
+              "frame": 480,
+              "file": "02_Whoosh_Quick_Cut_0.4s.wav",
+              "note": "Transition"
+            },
+            {
+              "frame": 520,
+              "file": "03_Click_Digital_UI_Tick.wav",
+              "note": "Sablier"
+            },
+            {
+              "frame": 660,
+              "file": "02_Click_Typewriter_Key.wav",
+              "note": "Texte"
+            }
+          ]
+        },
+        {
+          "from": 810,
+          "to": 1140,
+          "voFr": "Les gens qui réussissent ne sont pas plus motivés.",
+          "voEn": "Successful people aren't more motivated.",
+          "visual": "Deux silhouettes de barres côte à côte : jauge de motivation identique, mais une barre « actions » monte en or.",
+          "sfx": [
+            {
+              "frame": 810,
+              "file": "04_Whoosh_Camera_Push_0.8s.wav",
+              "note": "Transition"
+            },
+            {
+              "frame": 870,
+              "file": "01_Riser_Tension_Build_3.0s.wav",
+              "note": "Montée"
+            },
+            {
+              "frame": 1010,
+              "file": "03_Sub_Drop_Impact_110-30Hz.wav",
+              "note": "Révélation"
+            }
+          ]
+        },
+        {
+          "from": 1140,
+          "to": 1470,
+          "voFr": "Ils ont des systèmes. Même heure. Même lieu. Même action.",
+          "voEn": "They have systems. Same time. Same place. Same action.",
+          "visual": "Une grille de 7×4 cases se remplit case par case en or : un calendrier d'habitudes.",
+          "sfx": [
+            {
+              "frame": 1140,
+              "file": "08_Whoosh_Match_Cut_0.7s.wav",
+              "note": "Match cut"
+            },
+            {
+              "frame": 1170,
+              "file": "05_Click_Soft_Tap.wav",
+              "note": "Cases"
+            },
+            {
+              "frame": 1260,
+              "file": "05_Click_Soft_Tap.wav",
+              "note": "Cases"
+            },
+            {
+              "frame": 1340,
+              "file": "04_Click_Heavy_Keystroke.wav",
+              "note": "Semaine complète"
+            }
+          ]
+        },
+        {
+          "from": 1470,
+          "to": 1800,
+          "voFr": "1 % par jour pendant un an, c'est 37 fois mieux.",
+          "voEn": "1% a day for a year makes you 37 times better.",
+          "visual": "Une courbe exponentielle se trace de gauche à droite. Le chiffre x37 explose en or en haut de la courbe.",
+          "sfx": [
+            {
+              "frame": 1470,
+              "file": "07_Whoosh_Deep_Transition_1.2s.wav",
+              "note": "Courbe"
+            },
+            {
+              "frame": 1620,
+              "file": "05_Sub_Drop_Punch_120-35Hz.wav",
+              "note": "x37"
+            }
+          ]
+        },
+        {
+          "from": 1800,
+          "to": 1980,
           "voFr": "1 % chaque jour. C'est tout.",
           "voEn": "1% every day. That's all.",
           "visual": "Dézoom massif (scale 100 % -> 35 %) : l'escalier n'était qu'un détail d'une montagne géométrique. Texte 1% EVERY DAY.",
           "sfx": [
             {
-              "frame": 480,
+              "frame": 1800,
               "file": "07_Whoosh_Deep_Transition_1.2s.wav",
               "note": "Dézoom"
             },
             {
-              "frame": 540,
+              "frame": 1860,
               "file": "06_Sub_Drop_Monolith_88-28Hz.wav",
               "note": "Révélation montagne"
             },
             {
-              "frame": 560,
+              "frame": 1880,
               "file": "02_Click_Typewriter_Key.wav",
               "note": "Texte"
             }
           ]
         }
       ],
-      "durationInFrames": 660,
+      "durationInFrames": 1980,
       "bonus": false
     },
     {
@@ -317,30 +504,126 @@
         },
         {
           "from": 510,
-          "to": 660,
+          "to": 840,
+          "voFr": "Au début, personne ne comprend ce que tu fais.",
+          "voEn": "At first, nobody understands what you're doing.",
+          "visual": "Un point isolé à droite ; à gauche, une foule de points serrés. Des points d'interrogation apparaissent au-dessus de la foule.",
+          "sfx": [
+            {
+              "frame": 510,
+              "file": "02_Whoosh_Quick_Cut_0.4s.wav",
+              "note": "Transition"
+            },
+            {
+              "frame": 560,
+              "file": "03_Click_Digital_UI_Tick.wav",
+              "note": "Questions"
+            },
+            {
+              "frame": 620,
+              "file": "03_Click_Digital_UI_Tick.wav",
+              "note": "Questions"
+            }
+          ]
+        },
+        {
+          "from": 840,
+          "to": 1170,
+          "voFr": "Ils rient. Ils doutent. Ils te conseillent d'arrêter.",
+          "voEn": "They laugh. They doubt. They tell you to quit.",
+          "visual": "Trois mots s'écrivent l'un après l'autre et barrent le chemin : RIRES, DOUTES, ARRÊTE.",
+          "sfx": [
+            {
+              "frame": 840,
+              "file": "04_Whoosh_Camera_Push_0.8s.wav",
+              "note": "Transition"
+            },
+            {
+              "frame": 870,
+              "file": "02_Click_Typewriter_Key.wav",
+              "note": "RIRES"
+            },
+            {
+              "frame": 940,
+              "file": "02_Click_Typewriter_Key.wav",
+              "note": "DOUTES"
+            },
+            {
+              "frame": 1010,
+              "file": "04_Click_Heavy_Keystroke.wav",
+              "note": "ARRÊTE"
+            }
+          ]
+        },
+        {
+          "from": 1170,
+          "to": 1500,
+          "voFr": "Tu continues. Une brique par jour.",
+          "voEn": "You keep going. One brick a day.",
+          "visual": "Un mur se construit brique par brique en or, de bas en haut, au rythme d'une brique toutes les 12 images.",
+          "sfx": [
+            {
+              "frame": 1170,
+              "file": "08_Whoosh_Match_Cut_0.7s.wav",
+              "note": "Match cut"
+            },
+            {
+              "frame": 1190,
+              "file": "05_Click_Soft_Tap.wav",
+              "note": "Brique"
+            },
+            {
+              "frame": 1310,
+              "file": "01_Riser_Tension_Build_3.0s.wav",
+              "note": "Montée"
+            }
+          ]
+        },
+        {
+          "from": 1500,
+          "to": 1830,
+          "voFr": "Un jour, ceux qui riaient te demandent comment tu as fait.",
+          "voEn": "One day, those who laughed ask how you did it.",
+          "visual": "Le point isolé grandit et s'illumine en or ; la foule se tourne vers lui, des flèches convergent.",
+          "sfx": [
+            {
+              "frame": 1500,
+              "file": "03_Whoosh_Heavy_Swing_1.0s.wav",
+              "note": "Retournement"
+            },
+            {
+              "frame": 1620,
+              "file": "06_Sub_Drop_Monolith_88-28Hz.wav",
+              "note": "Impact"
+            }
+          ]
+        },
+        {
+          "from": 1830,
+          "to": 1980,
           "voFr": "Travaille en silence.",
           "voEn": "Work in silence.",
           "visual": "Le mot SILENCE. s'écrit, tout s'efface, et la scène se referme sur le cercle blanc isolé : la dernière image est identique à la première (boucle parfaite).",
           "sfx": [
             {
-              "frame": 510,
+              "frame": 1830,
               "file": "08_Whoosh_Match_Cut_0.7s.wav",
               "note": "Transition"
             },
             {
-              "frame": 530,
+              "frame": 1850,
               "file": "02_Click_Typewriter_Key.wav",
               "note": "Texte SILENCE."
             },
             {
-              "frame": 600,
+              "frame": 1920,
               "file": "06_Click_Typewriter_Return_Bell.wav",
               "note": "Retour boucle"
             }
           ]
         }
       ],
-      "durationInFrames": 660,
+      "durationInFrames": 1980,
       "bonus": false
     },
     {
