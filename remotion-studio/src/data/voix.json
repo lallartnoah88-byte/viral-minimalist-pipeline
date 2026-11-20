@@ -7,48 +7,48 @@
         "file": "voix/Video1-MentalNoise/scene_01.mp3",
         "frame": 6,
         "durationInFrames": 104,
-        "rate": "+17%",
-        "hash": "f75b7722ee8f100d",
+        "rate": "+18%",
+        "hash": "49f04b09ca8e44e5",
         "text": "Ton cerveau n'est pas fatigué. Il est saturé."
       },
       {
         "file": "voix/Video1-MentalNoise/scene_02.mp3",
         "frame": 126,
-        "durationInFrames": 118,
+        "durationInFrames": 119,
         "rate": "+0%",
-        "hash": "7f76c78812181d1a",
+        "hash": "4b3c83ccebd6f076",
         "text": "Douze priorités. Zéro direction."
       },
       {
         "file": "voix/Video1-MentalNoise/scene_03.mp3",
         "frame": 276,
-        "durationInFrames": 96,
+        "durationInFrames": 97,
         "rate": "+0%",
-        "hash": "e6393ca3ac96bc04",
+        "hash": "ca79b8548623954e",
         "text": "Chaque onglet ouvert vole un peu de ton énergie."
       },
       {
         "file": "voix/Video1-MentalNoise/scene_04.mp3",
         "frame": 426,
-        "durationInFrames": 104,
+        "durationInFrames": 105,
         "rate": "+0%",
-        "hash": "97aa5ef579f02322",
+        "hash": "14c8ff8b8a1bbc62",
         "text": "Ton téléphone vibre 96 fois par jour."
       },
       {
         "file": "voix/Video1-MentalNoise/scene_05.mp3",
         "frame": 756,
-        "durationInFrames": 117,
+        "durationInFrames": 118,
         "rate": "+0%",
-        "hash": "9163e586524dea33",
+        "hash": "8a4120000f57374c",
         "text": "Chaque interruption te coûte 23 minutes de concentration."
       },
       {
         "file": "voix/Video1-MentalNoise/scene_06.mp3",
         "frame": 1086,
-        "durationInFrames": 92,
+        "durationInFrames": 93,
         "rate": "+0%",
-        "hash": "75d98b4239c757c1",
+        "hash": "d05b2cde718f1202",
         "text": "Ton attention est fragmentée en mille morceaux."
       },
       {
@@ -56,15 +56,15 @@
         "frame": 1416,
         "durationInFrames": 143,
         "rate": "+0%",
-        "hash": "56060de0fad46699",
+        "hash": "5f236d090afe99fa",
         "text": "Le silence n'est pas vide. C'est là que ton cerveau répare."
       },
       {
         "file": "voix/Video1-MentalNoise/scene_08.mp3",
         "frame": 1746,
-        "durationInFrames": 165,
+        "durationInFrames": 166,
         "rate": "+0%",
-        "hash": "c23ea3baaae92334",
+        "hash": "7ed8f0ca5782c359",
         "text": "Ferme tout. Choisis une seule chose. Exécute."
       }
     ],
@@ -72,9 +72,9 @@
       {
         "file": "voix/Video2-MotivationIllusion/scene_01.mp3",
         "frame": 6,
-        "durationInFrames": 89,
+        "durationInFrames": 90,
         "rate": "+0%",
-        "hash": "dceb99a6143b1c96",
+        "hash": "988967f56503da86",
         "text": "La motivation dure 72 heures."
       },
       {
@@ -82,15 +82,15 @@
         "frame": 126,
         "durationInFrames": 86,
         "rate": "+0%",
-        "hash": "db0b6a410fd3b5ff",
+        "hash": "ab92216975a64c23",
         "text": "Elle monte vite... puis elle s'écrase."
       },
       {
         "file": "voix/Video2-MotivationIllusion/scene_03.mp3",
         "frame": 306,
-        "durationInFrames": 123,
+        "durationInFrames": 124,
         "rate": "+0%",
-        "hash": "4200ba232b0e48bd",
+        "hash": "a6a6edaa46f670f5",
         "text": "La discipline, elle, construit marche après marche."
       },
       {
@@ -98,7 +98,7 @@
         "frame": 486,
         "durationInFrames": 117,
         "rate": "+0%",
-        "hash": "ca7b864dbd7c3ea3",
+        "hash": "9d5fc2d75ee75c3c",
         "text": "Tu attends d'avoir envie. Elle ne vient jamais."
       },
       {
@@ -106,15 +106,15 @@
         "frame": 816,
         "durationInFrames": 97,
         "rate": "+0%",
-        "hash": "278a064bedbd9817",
+        "hash": "d37c46c46b098aee",
         "text": "Les gens qui réussissent ne sont pas plus motivés."
       },
       {
         "file": "voix/Video2-MotivationIllusion/scene_06.mp3",
         "frame": 1146,
-        "durationInFrames": 203,
+        "durationInFrames": 204,
         "rate": "+0%",
-        "hash": "31271b9666ae76cc",
+        "hash": "796ff397df399903",
         "text": "Ils ont des systèmes. Même heure. Même lieu. Même action."
       },
       {
@@ -122,15 +122,15 @@
         "frame": 1476,
         "durationInFrames": 120,
         "rate": "+0%",
-        "hash": "9bea32163702a059",
+        "hash": "3ab22970ec07aa9f",
         "text": "1 % par jour pendant un an, c'est 37 fois mieux."
       },
       {
         "file": "voix/Video2-MotivationIllusion/scene_08.mp3",
         "frame": 1806,
-        "durationInFrames": 110,
+        "durationInFrames": 111,
         "rate": "+0%",
-        "hash": "c2e4e0eaac155f06",
+        "hash": "780831cd328481c6",
         "text": "1 % chaque jour. C'est tout."
       }
     ],
@@ -138,9 +138,9 @@
       {
         "file": "voix/Video3-PriceOfDifference/scene_01.mp3",
         "frame": 6,
-        "durationInFrames": 68,
+        "durationInFrames": 69,
         "rate": "+0%",
-        "hash": "d8ae4d4296936851",
+        "hash": "5d3ed330c614ca04",
         "text": "Être différent a un prix."
       },
       {
@@ -148,23 +148,23 @@
         "frame": 126,
         "durationInFrames": 156,
         "rate": "+0%",
-        "hash": "c0229fb198fe6b1b",
+        "hash": "533012eb21502fd3",
         "text": "Les autres restent dans le confort. Toi, tu traces ta route."
       },
       {
         "file": "voix/Video3-PriceOfDifference/scene_03.mp3",
         "frame": 336,
-        "durationInFrames": 158,
+        "durationInFrames": 159,
         "rate": "+0%",
-        "hash": "0b5ee035119af6eb",
+        "hash": "54e4d0080c94b8ba",
         "text": "Le prix : la solitude. La récompense : tout le reste."
       },
       {
         "file": "voix/Video3-PriceOfDifference/scene_04.mp3",
         "frame": 516,
-        "durationInFrames": 101,
+        "durationInFrames": 102,
         "rate": "+0%",
-        "hash": "a384a93b4fc7d1f5",
+        "hash": "62455fcfdce05b6e",
         "text": "Au début, personne ne comprend ce que tu fais."
       },
       {
@@ -172,23 +172,23 @@
         "frame": 846,
         "durationInFrames": 156,
         "rate": "+0%",
-        "hash": "b647302cdef2c9f2",
+        "hash": "bd79ad2d31ad81aa",
         "text": "Ils rient. Ils doutent. Ils te conseillent d'arrêter."
       },
       {
         "file": "voix/Video3-PriceOfDifference/scene_06.mp3",
         "frame": 1176,
-        "durationInFrames": 113,
+        "durationInFrames": 114,
         "rate": "+0%",
-        "hash": "66e5730c51743583",
+        "hash": "0a60e65f90604204",
         "text": "Tu continues. Une brique par jour."
       },
       {
         "file": "voix/Video3-PriceOfDifference/scene_07.mp3",
         "frame": 1506,
-        "durationInFrames": 110,
+        "durationInFrames": 111,
         "rate": "+0%",
-        "hash": "68decc0a544650b5",
+        "hash": "2fba989dc66360e3",
         "text": "Un jour, ceux qui riaient te demandent comment tu as fait."
       },
       {
@@ -196,7 +196,7 @@
         "frame": 1836,
         "durationInFrames": 66,
         "rate": "+0%",
-        "hash": "a26dd265d74b0c19",
+        "hash": "5b8866aec2104cd9",
         "text": "Travaille en silence."
       }
     ],
@@ -204,9 +204,9 @@
       {
         "file": "voix/Video4-PaycheckTrap/scene_01.mp3",
         "frame": 6,
-        "durationInFrames": 127,
+        "durationInFrames": 128,
         "rate": "+0%",
-        "hash": "05ecead32f2f7e90",
+        "hash": "1ff098b30952ab9a",
         "text": "Tu peux gagner 5 000 € par mois... et rester pauvre toute ta vie."
       },
       {
@@ -214,7 +214,7 @@
         "frame": 216,
         "durationInFrames": 156,
         "rate": "+0%",
-        "hash": "8d0303a24c98b419",
+        "hash": "e96db68bef711e80",
         "text": "Le salaire tombe le 1er. Le 5, il a déjà disparu."
       },
       {
@@ -222,23 +222,23 @@
         "frame": 456,
         "durationInFrames": 128,
         "rate": "+0%",
-        "hash": "e651cdb3dae815ba",
+        "hash": "35899c615fd3d047",
         "text": "C'est la course du rat : travailler, payer, recommencer."
       },
       {
         "file": "voix/Video4-PaycheckTrap/scene_04.mp3",
         "frame": 696,
-        "durationInFrames": 152,
+        "durationInFrames": 153,
         "rate": "+0%",
-        "hash": "a47b338420544cf0",
+        "hash": "d9875897e184a595",
         "text": "Les riches n'achètent pas des choses. Ils achètent ce qui leur rapporte."
       },
       {
         "file": "voix/Video4-PaycheckTrap/scene_05.mp3",
         "frame": 966,
-        "durationInFrames": 183,
+        "durationInFrames": 184,
         "rate": "+0%",
-        "hash": "d1c7d48cd77b2aa0",
+        "hash": "e45ff65a830ebe5c",
         "text": "100 € par mois. Placés à 8 % par an. Pendant 30 ans."
       },
       {
@@ -246,23 +246,23 @@
         "frame": 1206,
         "durationInFrames": 194,
         "rate": "+0%",
-        "hash": "92ec39d22f144f33",
+        "hash": "8cdc9e4279300c54",
         "text": "Résultat : 149 000 €. Dont 113 000 € que tu n'as jamais eu à gagner."
       },
       {
         "file": "voix/Video4-PaycheckTrap/scene_07.mp3",
         "frame": 1476,
-        "durationInFrames": 145,
+        "durationInFrames": 146,
         "rate": "+0%",
-        "hash": "db2748c7ac855343",
+        "hash": "1cacc7ea8129e638",
         "text": "Ton plus gros levier, ce n'est pas ton salaire. C'est le temps."
       },
       {
         "file": "voix/Video4-PaycheckTrap/scene_08.mp3",
         "frame": 1686,
-        "durationInFrames": 117,
+        "durationInFrames": 118,
         "rate": "+0%",
-        "hash": "14ae156a89da9c25",
+        "hash": "a34aeae7d9f8bc9f",
         "text": "Commence aujourd'hui. Même avec 10 €."
       }
     ]

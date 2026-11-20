@@ -8,6 +8,7 @@ et la cale sur l'image de début de la scène :
   remotion-studio/src/data/voix.json                    manifeste {fichier, image de début, durée}
   DIST_PACK_TO_SELL/VOIX_OFF_HENRI/<VideoId>.wav        piste voix complète 48 kHz, à la durée exacte de la vidéo
 
+Chaque clip est normalisé à -14 LUFS (crête -1.5 dBTP), standard TikTok.
 Si une phrase est plus longue que sa scène, le débit est accéléré (jusqu'à +35 %) pour qu'elle tienne.
 Les clips déjà générés pour le même texte, la même voix et le même débit sont réutilisés (cache par empreinte).
 
@@ -45,7 +46,11 @@ async def synth(text, voice, rate, out):
     proxy = os.environ.get("HTTPS_PROXY") or os.environ.get("https_proxy") or None
     tmp = out + ".part"
     await edge_tts.Communicate(text, voice, rate=rate, proxy=proxy).save(tmp)
-    os.replace(tmp, out)
+    # Normalisation TikTok : -14 LUFS intégrés, crête vraie -1.5 dBTP (la voix reste devant après le -3 dB du mix).
+    subprocess.run(["ffmpeg", "-y", "-v", "error", "-f", "mp3", "-i", tmp, "-af", "loudnorm=I=-14:TP=-1.5:LRA=7",
+                    "-ar", "48000", "-c:a", "libmp3lame", "-b:a", "192k", "-f", "mp3", out + ".norm"], check=True)
+    os.replace(out + ".norm", out)
+    os.remove(tmp)
 
 
 def pct(rate):
@@ -60,7 +65,7 @@ async def scene_clip(video_id, idx, scene, fps, voice, base_rate, force, cache):
     rate = pct(base_rate)
     while True:
         r = f"{rate:+d}%"
-        key = hashlib.sha256(f"{voice}|{r}|{scene['voFr']}".encode()).hexdigest()[:16]
+        key = hashlib.sha256(f"loudnorm-14|{voice}|{r}|{scene['voFr']}".encode()).hexdigest()[:16]
         if force or cache.get(rel) != key or not os.path.exists(out):
             await synth(scene["voFr"], voice, r, out)
         sec = duration(out)
