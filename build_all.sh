@@ -146,6 +146,10 @@ cp "$PACK"/03_Sound_Design_SFX_WAV/*/*.wav "$RS/public/sfx/"
 rm -rf "$RS/public/icons" && mkdir -p "$RS/public/icons"
 cp -R "$PACK/01_Icones_Minimalistes_SVG/." "$RS/public/icons/"
 cp generators/storyboards.json "$RS/src/data/storyboards.json"
+if [ "${SKIP_VOIX:-0}" != "1" ] && python3 -c "import edge_tts" 2>/dev/null; then
+  python3 generators/generateur_voix.py >/dev/null && ok "Voix-off Henri (fr-FR-HenriNeural) synchronisée : $RS/public/voix + DIST_PACK_TO_SELL/VOIX_OFF_HENRI" \
+    || echo "  ⚠ Voix-off non régénérée (réseau ?) : les clips existants sont conservés"
+fi
 if [ ! -s "$RS/public/fonts/JetBrainsMono-Bold.ttf" ] && [ -s /usr/share/fonts/truetype/jetbrains-mono/JetBrainsMono-Bold.ttf ]; then
   cp /usr/share/fonts/truetype/jetbrains-mono/JetBrainsMono-Bold.ttf "$RS/public/fonts/"
 fi

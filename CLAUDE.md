@@ -24,6 +24,7 @@ Le PDF du guide utilise Playwright/Chromium s'il est installé, sinon le HTML re
 | `generators/plugin/` | Source du plugin AE `Minimalist_Viral_Setup.jsx` (ES3) + LISEZ-MOI FR/EN |
 | `generators/validate_jsx.js` | Contrôle ECMAScript 3 du plugin (acorn `ecmaVersion: 3` + motifs interdits) |
 | `generators/storyboards.json` | **Source unique** des 3 storyboards (timecodes, voix FR/EN, visuels, SFX) — utilisée par le guide ET par Remotion |
+| `generators/generateur_voix.py` | Voix-off FR « Henri » (edge-tts `fr-FR-HenriNeural`) : un clip par scène calé sur `storyboards.json`, manifeste `remotion-studio/src/data/voix.json`, pistes WAV complètes dans `DIST_PACK_TO_SELL/VOIX_OFF_HENRI/` |
 | `generators/generate_docs.js` | Guide `MASTERCLASS_VIRAL_ANIMATIONS.html/.pdf` (7 modules), copie du plugin, `COPIE_PAGE_DE_VENTE.md` |
 | `DIST_PACK_TO_SELL/` | Sortie : pack, ZIP client, mockup boutique, texte de vente |
 | `remotion-studio/` | Projet Remotion (React + TS) : 4 vidéos format TikTok 1080×1920, 30 fps, 61–90 s (V1–V3 : 1980 images, V4 : 1830) |
