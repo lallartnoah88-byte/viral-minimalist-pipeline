@@ -1,0 +1,25 @@
+{
+  "id": "01_chauffer_moteur",
+  "title": "Faut-il laisser chauffer sa voiture avant de partir en hiver ?",
+  "voice": { "engine": "kokoro", "name": "ff_siwis", "speed": 1.12 },
+  "segments": [
+    { "id": "hook1", "gap": 0.0,  "text": "Prends un moteur gelé, laisse-le tourner dix minutes au ralenti, et t'as un moteur bien chaud." },
+    { "id": "hook2", "gap": 0.18, "text": "Sauf que non." },
+    { "id": "hook3", "gap": 0.12, "text": "Au ralenti, il chauffe à peine." },
+    { "id": "why1",  "gap": 0.22, "text": "La chaleur d'un moteur vient des explosions dans les cylindres." },
+    { "id": "why2",  "gap": 0.16, "text": "Mais à l'arrêt, il ne force pas." },
+    { "id": "why3",  "gap": 0.12, "text": "Il brûle très peu d'essence, donc il produit très peu de chaleur." },
+    { "id": "dil1",  "gap": 0.22, "text": "Pire : tant qu'il est froid, le calculateur injecte plus d'essence." },
+    { "id": "dil2",  "gap": 0.14, "text": "Une partie ne brûle pas, glisse le long des cylindres, et finit dans ton huile." },
+    { "id": "dil3",  "gap": 0.12, "text": "Ça s'appelle la dilution." },
+    { "id": "old1",  "gap": 0.24, "text": "Alors pourquoi ton grand-père le faisait ?" },
+    { "id": "old2",  "gap": 0.14, "text": "Parce que les vieux moteurs à carburateur calaient à froid." },
+    { "id": "old3",  "gap": 0.14, "text": "Avec l'injection électronique, ce problème a disparu." },
+    { "id": "how1",  "gap": 0.24, "text": "La bonne méthode : démarre, boucle ta ceinture, et pars." },
+    { "id": "how2",  "gap": 0.14, "text": "Roule doucement, sans monter dans les tours, pendant les premiers kilomètres." },
+    { "id": "how3",  "gap": 0.12, "text": "Le moteur travaille, et la chaleur monte bien plus vite." },
+    { "id": "exc1",  "gap": 0.22, "text": "Seule exception : si ton pare-brise est givré, attends d'y voir clair." },
+    { "id": "end1",  "gap": 0.26, "text": "Félicitations, tu viens d'économiser de l'essence…" },
+    { "id": "end2",  "gap": 0.22, "text": "et ton moteur." }
+  ]
+}

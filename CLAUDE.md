@@ -55,3 +55,17 @@ npm run render-all  # 3 MP4 H.264 25 Mbps
 Compositions : `Video1-MentalNoise`, `Video2-MotivationIllusion`, `Video3-PriceOfDifference`.
 Composants : `MinimalCanvas` (fond, grille, grain, line boil, postérisation 15 fps), `GlowingSvgPath`
 (tracé stroke-dashoffset + double lueur), `TypewriterText` (JetBrains Mono + curseur), `CameraRig` (pan/zoom/secousses).
+
+## edu3d — vidéos TikTok éducatives 3D
+
+Projet séparé dans `edu3d/` (voir `edu3d/README.md` : analyse des références, vérification des faits, méthode).
+
+```bash
+cd edu3d && ./build.sh 01_chauffer_moteur      # → edu3d/out/01_chauffer_moteur.mp4 (1080x1920, 30 fps)
+STILLS=0.5,20,38 ./build.sh 01_chauffer_moteur # images de contrôle
+```
+
+- Texte = `edu3d/videos/<id>/script.json` ; mise en scène = `edu3d/scene/videos/<id>.js`, chaque action indexée sur un mot (`C.w(segment, n)`).
+- Sous-titres calqués sur la référence : 1 mot, MAJUSCULES, Montserrat 900 blanc contour noir, centre écran, sans ponctuation.
+- Plan-séquence continu (aucune coupe), flux en billes lumineuses, accroche « recette + *sauf que* », fin « *Félicitations…* ».
+- Ne jamais affirmer un fait non vérifié : sources listées dans le README de la vidéo.

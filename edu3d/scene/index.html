@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<title>edu3d renderer</title>
+<style>html,body{margin:0;background:#000;overflow:hidden}canvas{display:block}</style>
+<script type="importmap">
+{ "imports": { "three": "/node_modules/three/build/three.module.js", "three/addons/": "/node_modules/three/examples/jsm/" } }
+</script>
+</head>
+<body>
+<script type="module">
+import * as THREE from 'three';
+import { RoomEnvironment } from 'three/addons/environments/RoomEnvironment.js';
+import { W, H, createRenderer, createCompositor, Captions, makeClock } from './lib/core.js';
+
+const params = new URLSearchParams(location.search);
+const video = params.get('video');
+
+async function init() {
+  const font = new FontFace('MontserratBlack', 'url(/node_modules/@fontsource/montserrat/files/montserrat-latin-900-normal.woff2)', { weight: '900' });
+  await font.load(); document.fonts.add(font);
+  const timings = await (await fetch(`/build/${video}/timings.json`)).json();
+  const mod = await import(`./videos/${video}.js`);
+  const renderer = createRenderer();
+  const scene = new THREE.Scene();
+  const pmrem = new THREE.PMREMGenerator(renderer);
+  scene.environment = pmrem.fromScene(new RoomEnvironment(), 0.04).texture;
+  scene.environmentIntensity = 0.3;
+  const camera = new THREE.PerspectiveCamera(40, W / H, 0.05, 600);
+  const C = makeClock(timings);
+  const { update, sfx } = mod.build(scene, camera, C);
+  const captions = new Captions(timings.words);
+  const { out, ctx } = createCompositor();
+  document.body.appendChild(out);
+  out.style.width = '270px';
+  window.__edu3d = {
+    duration: timings.duration,
+    sfx,
+    frame(t, quality = 0.93) {
+      update(t);
+      renderer.render(scene, camera);
+      ctx.drawImage(renderer.domElement, 0, 0);
+      captions.draw(ctx, t);
+      return out.toDataURL('image/jpeg', quality);
+    },
+  };
+  window.__ready = true;
+}
+init().catch((e) => { window.__error = String(e && e.stack || e); });
+</script>
+</body>
+</html>
