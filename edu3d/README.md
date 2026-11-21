@@ -63,7 +63,26 @@ Non affirmé : durées de vie chiffrées des démarreurs (sources peu fiables) ;
 
 Sources : energy.gov (FOTW #1239), anl.gov (« Ask a scientist »), afdc.energy.gov (idle reduction), NRCan.
 
-## 4. Créer la vidéo suivante
+## 4. Série « 5 styles viraux » (vidéos 03 à 07)
+
+Même mécanique d'accroche (« recette + *sauf que* ») et même sous-titrage ; chaque vidéo a une direction artistique propre, toutes générées par script (`scene/lib/styles.js`, `scene/lib/character.js` : personnage articulé avec cinématique inverse des bras).
+
+| # | Style | Technique | Sujet | Durée |
+|---|---|---|---|---|
+| 03 | Pâte à modeler / stop-motion | relief d'empreintes (bump map procédural), formes qui « bougent » (boil), animation à 12 i/s, cyclorama pastel | Retenir un éternuement, c'est dangereux ? | 28,8 s |
+| 04 | Diorama isométrique | caméra orthographique en orbite, low-poly à facettes, chambre flottante de nuit, texte 3D extrudé | Avale-t-on des araignées en dormant ? | 26,6 s |
+| 05 | Néon synthwave | fond noir, grille rétro, soleil rayé, tubes lumineux + post-traitement bloom | Charger son téléphone la nuit abîme la batterie ? | 30,3 s |
+| 06 | Papier découpé | formes 2D extrudées, texture fibreuse, bord blanc de découpe, ombres portées, frise de cartes, 12 i/s | Manger avant de dormir fait grossir ? | 32,8 s |
+| 07 | Cartoon cel-shading | `MeshToonMaterial` 3 tons + contours BD (coque inversée), texte 3D | Dangereux de réveiller un somnambule ? | 29,6 s |
+
+**Vérification des faits**
+- 03 : BMJ Case Reports — un homme s'est rompu la gorge (2018), un autre la trachée, en bloquant un éternuement nez et bouche fermés ; selon les auteurs, la pression peut dépasser 20 fois celle d'un éternuement normal ; complications possibles décrites : tympans perforés, etc. Événement rare. (NPR, Live Science, CBS News)
+- 04 : le « 8 araignées par an » ne repose sur aucune étude ; aucun cas documenté (Rod Crawford, Burke Museum, via Scientific American) ; vibrations du dormeur (souffle, cœur, ronflement) repoussent les araignées. (Scientific American, Britannica)
+- 05 : l'iPhone arrête la charge une fois plein et la reprend sous 95 % ; la chaleur et le temps passé à 100 % usent la batterie ; la recharge optimisée attend vers 80 % jusqu'au réveil ; éviter de charger au chaud. (Apple, support 105105 et 108055)
+- 06 : Vujović et al., *Cell Metabolism* 2022 (Brigham and Women's / Harvard) : mêmes repas décalés de 4 h → plus de faim, dépense énergétique un peu plus faible, gènes du tissu adipeux orientés vers le stockage ; l'étude ne mesure pas la prise de poids à long terme (d'où « ne fait pas grossir tout seul »).
+- 07 : réveiller un somnambule ne provoque ni crise cardiaque ni lésion cérébrale ; risque de confusion et de réaction brusque ; conseil : le raccompagner calmement au lit, le réveiller doucement s'il est en danger. (Sleep Foundation, AASM via NBC News, Snopes)
+
+## 5. Créer la vidéo suivante
 
 1. Copier `videos/01_chauffer_moteur/script.json` → `videos/<nouvel_id>/script.json`, écrire la voix off (accroche « recette + *sauf que* », fin « *Félicitations…* »).
 2. Copier `scene/videos/01_chauffer_moteur.js` → `scene/videos/<nouvel_id>.js` ; réutiliser `buildGarage`, les props et `BeadFlow`, caler chaque action avec `C.w('<segment>', <n° de mot>)`.

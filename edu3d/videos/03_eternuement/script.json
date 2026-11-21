@@ -1,0 +1,12 @@
+{ "id": "03_eternuement", "title": "Retenir un éternuement, c'est dangereux ?", "style": "pâte à modeler", "voice": { "engine": "kokoro", "name": "ff_siwis", "speed": 1.12 },
+  "segments": [
+    { "id": "hook1", "gap": 0.0,  "text": "Pince-toi le nez, ferme la bouche, bloque ton éternuement, et t'as évité la honte." },
+    { "id": "hook2", "gap": 0.18, "text": "Sauf que ta gorge, elle, a pris le choc." },
+    { "id": "s1",    "gap": 0.22, "text": "Un éternuement chasse l'air de tes poumons à toute vitesse." },
+    { "id": "s2",    "gap": 0.14, "text": "Si tu bouches toutes les sorties, la pression reste coincée à l'intérieur." },
+    { "id": "s3",    "gap": 0.14, "text": "Selon des médecins, elle peut être multipliée par plus de vingt." },
+    { "id": "s4",    "gap": 0.22, "text": "Ils ont déjà soigné un homme qui s'était déchiré la gorge comme ça… et un autre, la trachée." },
+    { "id": "s5",    "gap": 0.18, "text": "C'est rare, mais ce geste peut aussi abîmer les tympans." },
+    { "id": "s6",    "gap": 0.22, "text": "La bonne méthode : éternue dans ton coude." },
+    { "id": "end1",  "gap": 0.24, "text": "Félicitations, ta gorge te dit merci." }
+  ] }

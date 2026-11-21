@@ -1,0 +1,11 @@
+{ "id": "07_somnambule", "title": "Est-ce dangereux de réveiller un somnambule ?", "style": "cartoon cel-shading", "voice": { "engine": "kokoro", "name": "ff_siwis", "speed": 1.12 },
+  "segments": [
+    { "id": "hook1", "gap": 0.0,  "text": "Réveille un somnambule en pleine balade, et tu risques de lui provoquer une crise cardiaque." },
+    { "id": "hook2", "gap": 0.18, "text": "Sauf que c'est un mythe." },
+    { "id": "s1",    "gap": 0.22, "text": "Le réveiller ne provoque ni crise cardiaque, ni dégâts au cerveau." },
+    { "id": "s2",    "gap": 0.18, "text": "Le vrai risque ? Il se réveille perdu, confus, et parfois, il se débat." },
+    { "id": "s3",    "gap": 0.22, "text": "Pendant une crise, une partie de son cerveau dort profondément, pendant qu'une autre fait marcher ses jambes." },
+    { "id": "s4",    "gap": 0.22, "text": "Le bon réflexe : parle-lui calmement, et guide-le doucement jusqu'à son lit." },
+    { "id": "s5",    "gap": 0.16, "text": "Mais s'il est en danger, près d'un escalier ou d'une fenêtre, réveille-le, en douceur." },
+    { "id": "end1",  "gap": 0.24, "text": "Félicitations, tout le monde a bien dormi." }
+  ] }

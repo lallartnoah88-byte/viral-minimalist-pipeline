@@ -1,0 +1,11 @@
+{ "id": "06_manger_tard", "title": "Manger avant de dormir fait-il grossir ?", "style": "papier découpé", "voice": { "engine": "kokoro", "name": "ff_siwis", "speed": 1.12 },
+  "segments": [
+    { "id": "hook1", "gap": 0.0,  "text": "Mange un gros plat à minuit, va te coucher direct, et tout se transforme en graisse." },
+    { "id": "hook2", "gap": 0.18, "text": "Sauf que ce n'est pas si simple." },
+    { "id": "s1",    "gap": 0.22, "text": "Ce qui fait grossir, c'est surtout le total de calories sur la journée, pas l'heure du repas." },
+    { "id": "s2",    "gap": 0.2,  "text": "Mais en 2022, des chercheurs de Harvard ont testé exactement les mêmes repas, décalés de quatre heures." },
+    { "id": "s3",    "gap": 0.14, "text": "En mangeant tard, les participants avaient plus faim, brûlaient un peu moins de calories, et leur graisse stockait davantage." },
+    { "id": "s4",    "gap": 0.2,  "text": "Manger tard ne fait pas grossir tout seul, mais ça pousse à manger plus, et à stocker plus." },
+    { "id": "s5",    "gap": 0.2,  "text": "Si tu peux, laisse quelques heures entre le dîner et le coucher." },
+    { "id": "end1",  "gap": 0.24, "text": "Félicitations, ton frigo peut dormir aussi." }
+  ] }

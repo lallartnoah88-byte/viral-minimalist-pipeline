@@ -1,0 +1,11 @@
+{ "id": "05_charge_nuit", "title": "Charger son téléphone toute la nuit abîme-t-il la batterie ?", "style": "néon synthwave", "voice": { "engine": "kokoro", "name": "ff_siwis", "speed": 1.12 },
+  "segments": [
+    { "id": "hook1", "gap": 0.0,  "text": "Branche ton téléphone toute la nuit, laisse-le à cent pour cent jusqu'au matin, et t'as tué ta batterie." },
+    { "id": "hook2", "gap": 0.18, "text": "Sauf que non, pas vraiment." },
+    { "id": "s1",    "gap": 0.22, "text": "Une fois pleine, ta batterie arrête de charger." },
+    { "id": "s2",    "gap": 0.14, "text": "Le téléphone la recharge juste un peu quand elle redescend." },
+    { "id": "s3",    "gap": 0.22, "text": "Ce qui l'use vraiment, c'est la chaleur, et le temps passé tout en haut, à cent pour cent." },
+    { "id": "s4",    "gap": 0.2,  "text": "C'est pour ça que les téléphones récents ont une charge optimisée : ils attendent vers quatre-vingts pour cent, et finissent juste avant ton réveil." },
+    { "id": "s5",    "gap": 0.22, "text": "Le vrai conseil : ne le charge pas sous ton oreiller, et évite les endroits chauds." },
+    { "id": "end1",  "gap": 0.24, "text": "Félicitations, ta batterie va vivre plus longtemps." }
+  ] }

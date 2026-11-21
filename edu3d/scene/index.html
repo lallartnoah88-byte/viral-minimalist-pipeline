@@ -29,7 +29,11 @@ async function init() {
   scene.environmentIntensity = 0.3;
   const camera = new THREE.PerspectiveCamera(40, W / H, 0.05, 600);
   const C = makeClock(timings);
-  const { update, sfx } = mod.build(scene, camera, C);
+  // une vidéo peut fournir sa propre caméra (ex. orthographique), son propre rendu (ex. bloom) ou désactiver l'environnement
+  const built = await mod.build(scene, camera, C, renderer);
+  const { update, sfx } = built;
+  const cam = built.camera || camera;
+  const draw = built.render || (() => renderer.render(scene, cam));
   const captions = new Captions(timings.words);
   const { out, ctx } = createCompositor();
   document.body.appendChild(out);
@@ -39,7 +43,7 @@ async function init() {
     sfx,
     frame(t, quality = 0.93) {
       update(t);
-      renderer.render(scene, camera);
+      draw();
       ctx.drawImage(renderer.domElement, 0, 0);
       captions.draw(ctx, t);
       return out.toDataURL('image/jpeg', quality);

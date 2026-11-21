@@ -1,0 +1,12 @@
+{ "id": "04_araignees", "title": "Avale-t-on vraiment des araignées en dormant ?", "style": "diorama isométrique", "voice": { "engine": "kokoro", "name": "ff_siwis", "speed": 1.12 },
+  "segments": [
+    { "id": "hook1", "gap": 0.0,  "text": "Dors la bouche ouverte, laisse une araignée se balader, et t'en avales huit par an." },
+    { "id": "hook2", "gap": 0.18, "text": "Sauf que c'est faux." },
+    { "id": "s1",    "gap": 0.22, "text": "Ce chiffre ne vient d'aucune étude, et les spécialistes ne connaissent aucun cas documenté." },
+    { "id": "s2",    "gap": 0.2,  "text": "Pour une araignée, un dormeur, c'est un danger." },
+    { "id": "s3",    "gap": 0.14, "text": "Ton souffle chaud, les battements de ton cœur, tes ronflements : tout ça fait vibrer le lit." },
+    { "id": "s4",    "gap": 0.14, "text": "Et les araignées sentent ces vibrations avec leurs pattes." },
+    { "id": "s5",    "gap": 0.14, "text": "Alors elles font demi-tour." },
+    { "id": "s6",    "gap": 0.2,  "text": "Impossible ? Pas totalement, mais ce serait un pur accident." },
+    { "id": "end1",  "gap": 0.24, "text": "Félicitations, tu peux dormir tranquille." }
+  ] }

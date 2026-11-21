@@ -312,12 +312,113 @@ def s_bell():
     return norm(x, 0.6)
 
 
+def s_squish():
+    # pâte écrasée : bruit grave filtré + petit glissando
+    d = 0.3
+    t = t_(d)
+    x = lp(noise(d), 700) * np.exp(-t * 14) + 0.5 * np.sin(2 * np.pi * np.cumsum(200 - 120 * t / d) / SR) * np.exp(-t * 12)
+    return norm(x, 0.7)
+
+
+def s_muffle():
+    # éternuement étouffé « mmpf »
+    d = 0.5
+    t = t_(d)
+    x = lp(noise(d), 350) * env(len(t), 0.02, 0.3) + 0.4 * np.sin(2 * np.pi * 110 * t) * env(len(t), 0.01, 0.35)
+    return norm(x, 0.9)
+
+
+def s_inflate():
+    d = 1.0
+    t = t_(d)
+    f = 180 + 520 * (t / d) ** 1.4
+    x = np.sin(2 * np.pi * np.cumsum(f) / SR) * 0.4 + bp(noise(d), 800, 3000) * 0.25
+    return norm(x * env(len(t), 0.05, 0.1), 0.55)
+
+
+def s_rip():
+    d = 0.4
+    t = t_(d)
+    x = bp(noise(d), 1500, 7000) * (0.5 + 0.5 * np.sign(np.sin(2 * np.pi * 60 * t))) * np.exp(-t * 6)
+    return norm(x, 0.8)
+
+
+def s_boing():
+    d = 0.6
+    t = t_(d)
+    f = 160 + 90 * np.sin(2 * np.pi * 11 * t) * np.exp(-t * 4)
+    return norm(np.sin(2 * np.pi * np.cumsum(f) / SR) * np.exp(-t * 5), 0.7)
+
+
+def s_achoo():
+    # « a-tchoum » : souffle montant puis explosion de bruit
+    d = 0.75
+    t = t_(d)
+    inhale = bp(noise(d), 600, 2500) * np.clip(t / 0.35, 0, 1) * (t < 0.38) * 0.35
+    burst = bp(noise(d), 1500, 7000) * np.exp(-(t - 0.4) * 9) * (t >= 0.4)
+    vowel = np.sin(2 * np.pi * 240 * t) * np.exp(-(t - 0.4) * 10) * (t >= 0.4) * 0.4
+    return norm(inhale + burst + vowel, 0.9)
+
+
+def s_snore():
+    d = 1.4
+    t = t_(d)
+    x = lp(noise(d), 260) * (0.6 + 0.4 * np.sign(np.sin(2 * np.pi * 38 * t))) * np.sin(np.pi * t / d) ** 2
+    return norm(x, 0.6)
+
+
+def s_heartbeat():
+    d = 0.8
+    x = np.zeros(int(d * SR))
+    for off, a in ((0.0, 1.0), (0.22, 0.7)):
+        b = tone(0.18, 55, 22) * a
+        i = int(off * SR)
+        x[i:i + len(b)] += b
+    return norm(lp(x, 200), 0.9)
+
+
+def s_zap():
+    d = 0.35
+    t = t_(d)
+    f = 900 * np.exp(-t * 8) + 120
+    x = np.sign(np.sin(2 * np.pi * np.cumsum(f) / SR)) * 0.4 + hp(noise(d), 4000) * 0.3
+    return norm(x * np.exp(-t * 7), 0.6)
+
+
+def s_hum():
+    d = 1.6
+    t = t_(d)
+    x = np.sin(2 * np.pi * 100 * t) + 0.5 * np.sin(2 * np.pi * 200 * t) + 0.2 * np.sin(2 * np.pi * 300 * t)
+    return norm(x * env(len(t), 0.2, 0.6), 0.4)
+
+
+def s_rustle():
+    d = 0.45
+    t = t_(d)
+    x = bp(noise(d), 2000, 8000) * (0.4 + 0.6 * np.abs(np.sin(2 * np.pi * 9 * t))) * np.sin(np.pi * t / d)
+    return norm(x, 0.55)
+
+
+def s_stamp():
+    d = 0.3
+    t = t_(d)
+    x = lp(noise(d), 1500) * np.exp(-t * 35) + 0.6 * tone(d, 90, 18)
+    return norm(x, 0.9)
+
+
+def s_slide():
+    d = 0.5
+    return norm(sweep_noise(d, 800, 2400, 0.3) * np.sin(np.pi * np.linspace(0, 1, int(d * SR))), 0.5)
+
+
 LIB = {k[2:]: v for k, v in globals().items() if k.startswith("s_")}
 GAINS_DB = {  # niveaux de mix par famille
     "whoosh": -12, "whoosh_long": -13, "pop": -11, "click": -13, "tick": -14, "clock": -14, "sparkle": -15, "ice": -15,
     "start": -12, "idle": -16, "fire": -14, "scratch": -9, "thud": -10, "boom": -12, "pour": -15, "drip": -13, "bloop": -12,
     "beep": -14, "fall": -14, "clank": -10, "sputter": -11, "stall": -12, "ding": -13, "buckle": -10, "drive": -14,
-    "rise": -15, "coin": -12, "bell": -13, "brake": -17, "defrost": -16, "confetti": -10,
+    "rise": -15, "coin": -12, "bell": -13,
+    "squish": -12, "muffle": -10, "inflate": -14, "rip": -10, "boing": -12, "achoo": -8, "snore": -14, "heartbeat": -10,
+    "zap": -13, "hum": -18, "rustle": -13, "stamp": -10, "slide": -14, "brake": -17, "defrost": -16, "confetti": -10,
 }
 
 
