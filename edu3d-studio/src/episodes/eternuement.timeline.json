@@ -1,0 +1,594 @@
+{
+ "slug": "eternuement",
+ "compositionId": "Edu3D-Eternuement",
+ "title": "Est-ce dangereux de retenir un éternuement ?",
+ "fps": 30,
+ "durationInFrames": 1162,
+ "shots": [
+  {
+   "id": "hook-pinch",
+   "scene": "car",
+   "params": {
+    "mode": "hookPinch"
+   },
+   "from": 0,
+   "dur": 49,
+   "cues": {
+    "il": 3,
+    "a": 8,
+    "retenu": 9,
+    "un": 20,
+    "eternuement": 22,
+    "tellement": 36,
+    "fort": 45
+   }
+  },
+  {
+   "id": "hook-tear",
+   "scene": "trachea",
+   "params": {
+    "mode": "hookTear"
+   },
+   "from": 49,
+   "dur": 66,
+   "cues": {
+    "quil": 3,
+    "sest": 9,
+    "fait": 13,
+    "un": 17,
+    "trou": 20,
+    "dans": 26,
+    "la": 29,
+    "trachee": 31
+   }
+  },
+  {
+   "id": "drive-wide",
+   "scene": "car",
+   "params": {
+    "mode": "driveWide"
+   },
+   "from": 115,
+   "dur": 37,
+   "cues": {
+    "cet": 3,
+    "homme": 12,
+    "conduisait": 15,
+    "en": 28,
+    "ecosse": 30
+   }
+  },
+  {
+   "id": "sneeze-coming",
+   "scene": "car",
+   "params": {
+    "mode": "sneezeComing"
+   },
+   "from": 152,
+   "dur": 70,
+   "cues": {
+    "quand": 3,
+    "il": 7,
+    "a": 13,
+    "senti": 14,
+    "leternuement": 23,
+    "monter": 37
+   }
+  },
+  {
+   "id": "pinch",
+   "scene": "car",
+   "params": {
+    "mode": "pinch"
+   },
+   "from": 222,
+   "dur": 98,
+   "cues": {
+    "pour": 3,
+    "le": 8,
+    "bloquer": 11,
+    "il": 20,
+    "sest": 23,
+    "pince": 27,
+    "nez": 39,
+    "et": 43,
+    "a": 46,
+    "garde": 48,
+    "la": 56,
+    "bouche": 59,
+    "fermee": 66
+   }
+  },
+  {
+   "id": "air-trapped",
+   "scene": "trachea",
+   "params": {
+    "mode": "trapped"
+   },
+   "from": 320,
+   "dur": 67,
+   "cues": {
+    "mais": 3,
+    "lair": 9,
+    "navait": 13,
+    "plus": 20,
+    "aucune": 24,
+    "sortie": 34
+   }
+  },
+  {
+   "id": "pressure",
+   "scene": "trachea",
+   "params": {
+    "mode": "pressure"
+   },
+   "from": 387,
+   "dur": 66,
+   "cues": {
+    "la": 3,
+    "pression": 9,
+    "a": 19,
+    "grimpe": 21,
+    "dun": 30,
+    "coup": 34,
+    "dans": 38,
+    "ses": 42,
+    "voies": 46,
+    "respiratoires": 50
+   }
+  },
+  {
+   "id": "tear",
+   "scene": "trachea",
+   "params": {
+    "mode": "tear"
+   },
+   "from": 453,
+   "dur": 87,
+   "cues": {
+    "et": 3,
+    "a": 5,
+    "dechire": 7,
+    "un": 19,
+    "trou": 21,
+    "de": 26,
+    "2millimetres": 30,
+    "dans": 46,
+    "sa": 49,
+    "trachee": 53
+   }
+  },
+  {
+   "id": "neck-swell",
+   "scene": "neck",
+   "params": {
+    "mode": "swell"
+   },
+   "from": 540,
+   "dur": 88,
+   "cues": {
+    "son": 3,
+    "cou": 10,
+    "sest": 15,
+    "mis": 18,
+    "a": 23,
+    "gonfler": 25,
+    "et": 35,
+    "crepiter": 39,
+    "sous": 54,
+    "les": 57,
+    "doigts": 60
+   }
+  },
+  {
+   "id": "neck-xray",
+   "scene": "neck",
+   "params": {
+    "mode": "xray"
+   },
+   "from": 628,
+   "dur": 63,
+   "cues": {
+    "de": 3,
+    "lair": 9,
+    "sechappait": 13,
+    "sous": 26,
+    "sa": 31,
+    "peau": 35
+   }
+  },
+  {
+   "id": "hospital",
+   "scene": "hospital",
+   "params": {
+    "mode": "scan"
+   },
+   "from": 691,
+   "dur": 90,
+   "cues": {
+    "a": 3,
+    "lhopital": 7,
+    "le": 20,
+    "scanner": 24,
+    "confirme": 36,
+    "la": 48,
+    "dechirure": 51
+   }
+  },
+  {
+   "id": "heal",
+   "scene": "trachea",
+   "params": {
+    "mode": "heal"
+   },
+   "from": 781,
+   "dur": 93,
+   "cues": {
+    "par": 3,
+    "chance": 9,
+    "elle": 17,
+    "a": 20,
+    "cicatrise": 22,
+    "toute": 39,
+    "seule": 45,
+    "sans": 51,
+    "operation": 55
+   }
+  },
+  {
+   "id": "case-2018",
+   "scene": "calendar",
+   "params": {
+    "year": "2018",
+    "rewind": true,
+    "rewindLabel": "◀◀ RETOUR EN 2018"
+   },
+   "from": 874,
+   "dur": 75,
+   "cues": {
+    "et": 3,
+    "ce": 7,
+    "nest": 11,
+    "pas": 14,
+    "le": 18,
+    "premier": 21,
+    "cas": 28,
+    "en": 60,
+    "2018un": 65
+   }
+  },
+  {
+   "id": "other-man",
+   "scene": "throat",
+   "params": {
+    "rewind": true,
+    "rewindLabel": "◀◀ RETOUR EN 2018"
+   },
+   "from": 949,
+   "dur": 108,
+   "cues": {
+    "autre": 10,
+    "homme": 18,
+    "setait": 21,
+    "dechire": 28,
+    "le": 40,
+    "fond": 44,
+    "de": 48,
+    "la": 51,
+    "gorge": 54,
+    "meme": 67,
+    "maniere": 72
+   }
+  },
+  {
+   "id": "advice",
+   "scene": "car",
+   "params": {
+    "mode": "advice"
+   },
+   "from": 1057,
+   "dur": 45,
+   "cues": {
+    "alors": 3,
+    "la": 11,
+    "prochaine": 14,
+    "fois": 25,
+    "ne": 30,
+    "le": 33,
+    "retiens": 35,
+    "pas": 44
+   }
+  },
+  {
+   "id": "elbow",
+   "scene": "elbow",
+   "params": {},
+   "from": 1102,
+   "dur": 59,
+   "cues": {
+    "pas": -1,
+    "eternue": 3,
+    "dans": 12,
+    "ton": 16,
+    "coude": 20
+   }
+  }
+ ],
+ "subs": [
+  {
+   "text": "Il a retenu",
+   "from": 3,
+   "to": 20
+  },
+  {
+   "text": "un éternuement",
+   "from": 20,
+   "to": 36
+  },
+  {
+   "text": "tellement fort",
+   "from": 36,
+   "to": 52
+  },
+  {
+   "text": "qu'il s'est fait",
+   "from": 52,
+   "to": 67
+  },
+  {
+   "text": "un trou",
+   "from": 67,
+   "to": 75
+  },
+  {
+   "text": "dans la trachée",
+   "from": 75,
+   "to": 118
+  },
+  {
+   "text": "Cet homme",
+   "from": 118,
+   "to": 130
+  },
+  {
+   "text": "conduisait",
+   "from": 130,
+   "to": 143
+  },
+  {
+   "text": "en Écosse",
+   "from": 143,
+   "to": 155
+  },
+  {
+   "text": "quand il a senti",
+   "from": 155,
+   "to": 175
+  },
+  {
+   "text": "l'éternuement",
+   "from": 175,
+   "to": 189
+  },
+  {
+   "text": "monter",
+   "from": 189,
+   "to": 225
+  },
+  {
+   "text": "Pour le bloquer",
+   "from": 225,
+   "to": 242
+  },
+  {
+   "text": "il s'est pincé",
+   "from": 242,
+   "to": 258
+  },
+  {
+   "text": "le nez",
+   "from": 258,
+   "to": 265
+  },
+  {
+   "text": "et a gardé",
+   "from": 265,
+   "to": 278
+  },
+  {
+   "text": "la bouche fermée",
+   "from": 278,
+   "to": 323
+  },
+  {
+   "text": "Mais l'air",
+   "from": 323,
+   "to": 333
+  },
+  {
+   "text": "n'avait plus",
+   "from": 333,
+   "to": 344
+  },
+  {
+   "text": "aucune sortie",
+   "from": 344,
+   "to": 390
+  },
+  {
+   "text": "La pression",
+   "from": 390,
+   "to": 406
+  },
+  {
+   "text": "a grimpé",
+   "from": 406,
+   "to": 418
+  },
+  {
+   "text": "d'un coup",
+   "from": 418,
+   "to": 426
+  },
+  {
+   "text": "dans ses voies",
+   "from": 426,
+   "to": 438
+  },
+  {
+   "text": "respiratoires",
+   "from": 438,
+   "to": 456
+  },
+  {
+   "text": "et a déchiré",
+   "from": 456,
+   "to": 472
+  },
+  {
+   "text": "un trou",
+   "from": 472,
+   "to": 479
+  },
+  {
+   "text": "de 2 millimètres",
+   "from": 479,
+   "to": 499
+  },
+  {
+   "text": "dans sa trachée",
+   "from": 499,
+   "to": 543
+  },
+  {
+   "text": "Son cou",
+   "from": 543,
+   "to": 554
+  },
+  {
+   "text": "s'est mis à gonfler",
+   "from": 554,
+   "to": 575
+  },
+  {
+   "text": "et à crépiter",
+   "from": 575,
+   "to": 593
+  },
+  {
+   "text": "sous les doigts",
+   "from": 593,
+   "to": 631
+  },
+  {
+   "text": "De l'air",
+   "from": 631,
+   "to": 642
+  },
+  {
+   "text": "s'échappait",
+   "from": 642,
+   "to": 655
+  },
+  {
+   "text": "sous sa peau",
+   "from": 655,
+   "to": 694
+  },
+  {
+   "text": "À l'hôpital",
+   "from": 694,
+   "to": 711
+  },
+  {
+   "text": "le scanner",
+   "from": 711,
+   "to": 725
+  },
+  {
+   "text": "a confirmé",
+   "from": 725,
+   "to": 739
+  },
+  {
+   "text": "la déchirure",
+   "from": 739,
+   "to": 784
+  },
+  {
+   "text": "Par chance",
+   "from": 784,
+   "to": 798
+  },
+  {
+   "text": "elle a cicatrisé",
+   "from": 798,
+   "to": 820
+  },
+  {
+   "text": "toute seule",
+   "from": 820,
+   "to": 832
+  },
+  {
+   "text": "sans opération",
+   "from": 832,
+   "to": 877
+  },
+  {
+   "text": "Et ce n'est pas",
+   "from": 877,
+   "to": 891
+  },
+  {
+   "text": "le premier cas",
+   "from": 891,
+   "to": 933
+  },
+  {
+   "text": "En 2018",
+   "from": 933,
+   "to": 952
+  },
+  {
+   "text": "un autre homme",
+   "from": 952,
+   "to": 971
+  },
+  {
+   "text": "s'était déchiré",
+   "from": 971,
+   "to": 990
+  },
+  {
+   "text": "le fond de la gorge",
+   "from": 990,
+   "to": 1011
+  },
+  {
+   "text": "de la même manière",
+   "from": 1011,
+   "to": 1060
+  },
+  {
+   "text": "Alors la prochaine fois",
+   "from": 1060,
+   "to": 1087
+  },
+  {
+   "text": "ne le retiens pas",
+   "from": 1087,
+   "to": 1105
+  },
+  {
+   "text": "Éternue",
+   "from": 1105,
+   "to": 1115
+  },
+  {
+   "text": "dans ton coude",
+   "from": 1115,
+   "to": 1161
+  }
+ ]
+}

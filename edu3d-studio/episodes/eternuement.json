@@ -1,0 +1,397 @@
+{
+  "slug": "eternuement",
+  "compositionId": "Edu3D-Eternuement",
+  "title": "Est-ce dangereux de retenir un éternuement ?",
+  "voice": "fr-FR-HenriNeural",
+  "rate": "+12%",
+  "pitch": "-2Hz",
+  "fps": 30,
+  "tailSeconds": 0.9,
+  "sources": [
+    "Misirovs R. et al., « Spontaneous tracheal perforation following a sneeze », BMJ Case Reports 2023;16:e255633 (Ninewells Hospital, Dundee)",
+    "Yang W. et al., « Snap, crackle and pop: when sneezing leads to crackling in the neck », BMJ Case Reports 2018 (PMID 29335355)"
+  ],
+  "shots": [
+    {
+      "id": "hook-pinch",
+      "scene": "car",
+      "params": {
+        "mode": "hookPinch"
+      },
+      "text": "Il a retenu | un éternuement | tellement fort",
+      "sfx": [
+        {
+          "fx": "whooshIn",
+          "at": 0.0,
+          "gain": -9
+        },
+        {
+          "fx": "pressure",
+          "at": 0.25,
+          "gain": -13
+        },
+        {
+          "fx": "thump",
+          "word": "tellement",
+          "gain": -10
+        }
+      ]
+    },
+    {
+      "id": "hook-tear",
+      "scene": "trachea",
+      "params": {
+        "mode": "hookTear"
+      },
+      "text": "qu'il s'est fait | un trou | dans la trachée.",
+      "sfx": [
+        {
+          "fx": "whooshDeep",
+          "at": 0.0,
+          "gain": -8
+        },
+        {
+          "fx": "tear",
+          "word": "trou",
+          "gain": -6
+        },
+        {
+          "fx": "hiss",
+          "word": "trou",
+          "gain": -16
+        }
+      ]
+    },
+    {
+      "id": "drive-wide",
+      "scene": "car",
+      "params": {
+        "mode": "driveWide"
+      },
+      "text": "Cet homme | conduisait | en Écosse",
+      "sfx": [
+        {
+          "fx": "whoosh",
+          "at": 0.0,
+          "gain": -11
+        },
+        {
+          "fx": "engine",
+          "at": 0.0,
+          "dur": "shot",
+          "gain": -22
+        }
+      ]
+    },
+    {
+      "id": "sneeze-coming",
+      "scene": "car",
+      "params": {
+        "mode": "sneezeComing"
+      },
+      "text": "quand il a senti | l'éternuement | monter.",
+      "sfx": [
+        {
+          "fx": "whoosh",
+          "at": 0.0,
+          "gain": -12
+        },
+        {
+          "fx": "riser",
+          "word": "éternuement",
+          "gain": -14
+        }
+      ]
+    },
+    {
+      "id": "pinch",
+      "scene": "car",
+      "params": {
+        "mode": "pinch"
+      },
+      "text": "Pour le bloquer | il s'est pincé | le nez | et a gardé | la bouche fermée.",
+      "sfx": [
+        {
+          "fx": "pop",
+          "word": "pincé",
+          "gain": -11
+        },
+        {
+          "fx": "squeak",
+          "word": "nez",
+          "gain": -16
+        },
+        {
+          "fx": "pop",
+          "word": "bouche",
+          "gain": -12
+        }
+      ]
+    },
+    {
+      "id": "air-trapped",
+      "scene": "trachea",
+      "params": {
+        "mode": "trapped"
+      },
+      "text": "Mais l'air | n'avait plus | aucune sortie.",
+      "sfx": [
+        {
+          "fx": "whooshDeep",
+          "at": 0.0,
+          "gain": -9
+        },
+        {
+          "fx": "bonk",
+          "word": "aucune",
+          "gain": -12
+        }
+      ]
+    },
+    {
+      "id": "pressure",
+      "scene": "trachea",
+      "params": {
+        "mode": "pressure"
+      },
+      "text": "La pression | a grimpé | d'un coup | dans ses voies | respiratoires",
+      "sfx": [
+        {
+          "fx": "riser",
+          "at": 0.0,
+          "dur": "shot",
+          "gain": -12
+        },
+        {
+          "fx": "pressure",
+          "word": "grimpé",
+          "gain": -12
+        }
+      ]
+    },
+    {
+      "id": "tear",
+      "scene": "trachea",
+      "params": {
+        "mode": "tear"
+      },
+      "text": "et a déchiré | un trou | de 2 millimètres | dans sa trachée.",
+      "sfx": [
+        {
+          "fx": "tear",
+          "word": "déchiré",
+          "gain": -5
+        },
+        {
+          "fx": "thump",
+          "word": "déchiré",
+          "gain": -9
+        },
+        {
+          "fx": "hiss",
+          "word": "trou",
+          "gain": -15
+        },
+        {
+          "fx": "tick",
+          "word": "millimètres",
+          "gain": -14
+        }
+      ]
+    },
+    {
+      "id": "neck-swell",
+      "scene": "neck",
+      "params": {
+        "mode": "swell"
+      },
+      "text": "Son cou | s'est mis à gonfler | et à crépiter | sous les doigts.",
+      "sfx": [
+        {
+          "fx": "whoosh",
+          "at": 0.0,
+          "gain": -12
+        },
+        {
+          "fx": "inflate",
+          "word": "gonfler",
+          "gain": -12
+        },
+        {
+          "fx": "crackle",
+          "word": "crépiter",
+          "gain": -9
+        }
+      ]
+    },
+    {
+      "id": "neck-xray",
+      "scene": "neck",
+      "params": {
+        "mode": "xray"
+      },
+      "text": "De l'air | s'échappait | sous sa peau.",
+      "sfx": [
+        {
+          "fx": "scan",
+          "at": 0.0,
+          "gain": -12
+        },
+        {
+          "fx": "bubbles",
+          "word": "échappait",
+          "gain": -12
+        }
+      ]
+    },
+    {
+      "id": "hospital",
+      "scene": "hospital",
+      "params": {
+        "mode": "scan"
+      },
+      "text": "À l'hôpital | le scanner | a confirmé | la déchirure.",
+      "sfx": [
+        {
+          "fx": "whoosh",
+          "at": 0.0,
+          "gain": -11
+        },
+        {
+          "fx": "hum",
+          "at": 0.0,
+          "dur": "shot",
+          "gain": -20
+        },
+        {
+          "fx": "beep",
+          "word": "confirmé",
+          "gain": -14
+        },
+        {
+          "fx": "beep",
+          "word": "déchirure",
+          "gain": -12
+        }
+      ]
+    },
+    {
+      "id": "heal",
+      "scene": "trachea",
+      "params": {
+        "mode": "heal"
+      },
+      "text": "Par chance | elle a cicatrisé | toute seule | sans opération.",
+      "sfx": [
+        {
+          "fx": "whooshDeep",
+          "at": 0.0,
+          "gain": -10
+        },
+        {
+          "fx": "shimmer",
+          "word": "cicatrisé",
+          "gain": -11
+        },
+        {
+          "fx": "ding",
+          "word": "opération",
+          "gain": -13
+        }
+      ]
+    },
+    {
+      "id": "case-2018",
+      "scene": "calendar",
+      "params": {
+        "year": "2018",
+        "rewind": true,
+        "rewindLabel": "◀◀ RETOUR EN 2018"
+      },
+      "text": "Et ce n'est pas | le premier cas. | En 2018",
+      "sfx": [
+        {
+          "fx": "whoosh",
+          "at": 0.0,
+          "gain": -11
+        },
+        {
+          "fx": "flip",
+          "word": "2018",
+          "gain": -9
+        },
+        {
+          "fx": "thump",
+          "word": "2018",
+          "gain": -12
+        }
+      ]
+    },
+    {
+      "id": "other-man",
+      "scene": "throat",
+      "params": {
+        "rewind": true,
+        "rewindLabel": "◀◀ RETOUR EN 2018"
+      },
+      "text": "un autre homme | s'était déchiré | le fond de la gorge | de la même manière.",
+      "sfx": [
+        {
+          "fx": "pop",
+          "at": 0.05,
+          "gain": -11
+        },
+        {
+          "fx": "tear",
+          "word": "déchiré",
+          "gain": -9
+        },
+        {
+          "fx": "pulse",
+          "word": "gorge",
+          "gain": -14
+        }
+      ]
+    },
+    {
+      "id": "advice",
+      "scene": "car",
+      "params": {
+        "mode": "advice"
+      },
+      "text": "Alors la prochaine fois | ne le retiens pas.",
+      "sfx": [
+        {
+          "fx": "whoosh",
+          "at": 0.0,
+          "gain": -11
+        },
+        {
+          "fx": "riser",
+          "word": "retiens",
+          "gain": -15
+        }
+      ]
+    },
+    {
+      "id": "elbow",
+      "scene": "elbow",
+      "params": {},
+      "text": "Éternue | dans ton coude.",
+      "sfx": [
+        {
+          "fx": "sneeze",
+          "word": "coude",
+          "offset": -0.2,
+          "gain": -7
+        },
+        {
+          "fx": "pop",
+          "word": "coude",
+          "offset": 0.35,
+          "gain": -11
+        }
+      ]
+    }
+  ]
+}

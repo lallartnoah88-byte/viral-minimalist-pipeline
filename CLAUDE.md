@@ -55,3 +55,18 @@ npm run render-all  # 3 MP4 H.264 25 Mbps
 Compositions : `Video1-MentalNoise`, `Video2-MotivationIllusion`, `Video3-PriceOfDifference`.
 Composants : `MinimalCanvas` (fond, grille, grain, line boil, postérisation 15 fps), `GlowingSvgPath`
 (tracé stroke-dashoffset + double lueur), `TypewriterText` (JetBrains Mono + curseur), `CameraRig` (pan/zoom/secousses).
+
+## Edu3D Studio (vidéos TikTok éducatives 3D)
+
+Projet séparé `edu3d-studio/` (Remotion + three.js / @react-three/fiber, rendu WebGL logiciel `swangle`, aucun GPU requis).
+
+```bash
+cd edu3d-studio
+./render_episode.sh eternuement      # voix + timeline + sons + rendu 3D + mastering → out/eternuement.mp4
+tools/contact_sheet.sh Edu3D-Eternuement src/episodes/eternuement.timeline.json /tmp/cs   # contrôle qualité
+```
+
+- **Source unique d'un épisode** : `edu3d-studio/episodes/<slug>.json` (texte par plan, sous-titres coupés par `|`, bruitages ancrés sur des mots). Ne jamais éditer `src/episodes/*.timeline.json` à la main : il est régénéré par `tools/build_episode.py`.
+- Sous-titres de référence : DejaVu Sans Bold 66 px blanc, liseré noir, centre à y = 1500 px, 1–4 mots, casse d'origine, sans ponctuation, sans animation.
+- Faits scientifiques : chaque affirmation du script doit être sourcée dans le champ `sources` de l'épisode et dans `edu3d-studio/README.md`.
+- Analyse des références, script, découpage, prompts Blender/Kling et stratégie de durée : `edu3d-studio/README.md`.

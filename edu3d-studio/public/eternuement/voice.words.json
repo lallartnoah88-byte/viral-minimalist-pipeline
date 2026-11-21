@@ -1,0 +1,680 @@
+{
+ "key": "[\"Il a retenu un éternuement tellement fort qu'il s'est fait un trou dans la trachée. Cet homme conduisait en Écosse quand il a senti l'éternuement monter. Pour le bloquer il s'est pincé le nez et a gardé la bouche fermée. Mais l'air n'avait plus aucune sortie. La pression a grimpé d'un coup dans ses voies respiratoires et a déchiré un trou de 2 millimètres dans sa trachée. Son cou s'est mis à gonfler et à crépiter sous les doigts. De l'air s'échappait sous sa peau. À l'hôpital le scanner a confirmé la déchirure. Par chance elle a cicatrisé toute seule sans opération. Et ce n'est pas le premier cas. En 2018 un autre homme s'était déchiré le fond de la gorge de la même manière. Alors la prochaine fois ne le retiens pas. Éternue dans ton coude.\", \"fr-FR-HenriNeural\", \"+12%\", \"-2Hz\"]",
+ "words": [
+  {
+   "text": "Il",
+   "start": 0.094625,
+   "end": 0.262041
+  },
+  {
+   "text": "a",
+   "start": 0.273208,
+   "end": 0.2955409
+  },
+  {
+   "text": "retenu",
+   "start": 0.306708,
+   "end": 0.663833
+  },
+  {
+   "text": "un",
+   "start": 0.675,
+   "end": 0.730791
+  },
+  {
+   "text": "éternuement",
+   "start": 0.741958,
+   "end": 1.177208
+  },
+  {
+   "text": "tellement",
+   "start": 1.188375,
+   "end": 1.478541
+  },
+  {
+   "text": "fort",
+   "start": 1.48975,
+   "end": 1.735291
+  },
+  {
+   "text": "qu'il",
+   "start": 1.746416,
+   "end": 1.924999
+  },
+  {
+   "text": "s'est",
+   "start": 1.936166,
+   "end": 2.058916
+  },
+  {
+   "text": "fait",
+   "start": 2.070083,
+   "end": 2.215166
+  },
+  {
+   "text": "un",
+   "start": 2.226333,
+   "end": 2.304458
+  },
+  {
+   "text": "trou",
+   "start": 2.315625,
+   "end": 2.494208
+  },
+  {
+   "text": "dans",
+   "start": 2.505375,
+   "end": 2.594666
+  },
+  {
+   "text": "la",
+   "start": 2.605791,
+   "end": 2.683916
+  },
+  {
+   "text": "trachée",
+   "start": 2.695083,
+   "end": 3.152666
+  },
+  {
+   "text": "Cet",
+   "start": 3.928583,
+   "end": 4.207583
+  },
+  {
+   "text": "homme",
+   "start": 4.21875,
+   "end": 4.330375
+  },
+  {
+   "text": "conduisait",
+   "start": 4.3415,
+   "end": 4.743291
+  },
+  {
+   "text": "en",
+   "start": 4.754458,
+   "end": 4.821416
+  },
+  {
+   "text": "Écosse",
+   "start": 4.832583,
+   "end": 5.156249
+  },
+  {
+   "text": "quand",
+   "start": 5.167416,
+   "end": 5.290166
+  },
+  {
+   "text": "il",
+   "start": 5.301333,
+   "end": 5.479916
+  },
+  {
+   "text": "a",
+   "start": 5.491083,
+   "end": 5.535708
+  },
+  {
+   "text": "senti",
+   "start": 5.546875,
+   "end": 5.837041
+  },
+  {
+   "text": "l'éternuement",
+   "start": 5.848208,
+   "end": 6.294624
+  },
+  {
+   "text": "monter",
+   "start": 6.305791,
+   "end": 6.729916
+  },
+  {
+   "text": "Pour",
+   "start": 7.5,
+   "end": 7.667416
+  },
+  {
+   "text": "le",
+   "start": 7.678583,
+   "end": 7.756708
+  },
+  {
+   "text": "bloquer",
+   "start": 7.767875,
+   "end": 8.058041
+  },
+  {
+   "text": "il",
+   "start": 8.069208,
+   "end": 8.158499
+  },
+  {
+   "text": "s'est",
+   "start": 8.169625,
+   "end": 8.292375
+  },
+  {
+   "text": "pincé",
+   "start": 8.303583,
+   "end": 8.593749
+  },
+  {
+   "text": "le",
+   "start": 8.604916,
+   "end": 8.683041
+  },
+  {
+   "text": "nez",
+   "start": 8.694208,
+   "end": 8.828124
+  },
+  {
+   "text": "et",
+   "start": 8.839291,
+   "end": 8.917416
+  },
+  {
+   "text": "a",
+   "start": 8.928583,
+   "end": 8.984374
+  },
+  {
+   "text": "gardé",
+   "start": 8.995541,
+   "end": 9.263416
+  },
+  {
+   "text": "la",
+   "start": 9.274541,
+   "end": 9.363832
+  },
+  {
+   "text": "bouche",
+   "start": 9.375,
+   "end": 9.587041
+  },
+  {
+   "text": "fermée",
+   "start": 9.598208,
+   "end": 9.988833
+  },
+  {
+   "text": "Mais",
+   "start": 10.758916,
+   "end": 10.937499
+  },
+  {
+   "text": "l'air",
+   "start": 10.948666,
+   "end": 11.082582
+  },
+  {
+   "text": "n'avait",
+   "start": 11.09375,
+   "end": 11.305791
+  },
+  {
+   "text": "plus",
+   "start": 11.316958,
+   "end": 11.462041
+  },
+  {
+   "text": "aucune",
+   "start": 11.473208,
+   "end": 11.774541
+  },
+  {
+   "text": "sortie",
+   "start": 11.785708,
+   "end": 12.243291
+  },
+  {
+   "text": "La",
+   "start": 13.013375,
+   "end": 13.191958
+  },
+  {
+   "text": "pression",
+   "start": 13.203125,
+   "end": 13.526791
+  },
+  {
+   "text": "a",
+   "start": 13.537958,
+   "end": 13.593749
+  },
+  {
+   "text": "grimpé",
+   "start": 13.604916,
+   "end": 13.906249
+  },
+  {
+   "text": "d'un",
+   "start": 13.917416,
+   "end": 14.040166
+  },
+  {
+   "text": "coup",
+   "start": 14.051333,
+   "end": 14.185249
+  },
+  {
+   "text": "dans",
+   "start": 14.196416,
+   "end": 14.296874
+  },
+  {
+   "text": "ses",
+   "start": 14.308041,
+   "end": 14.419666
+  },
+  {
+   "text": "voies",
+   "start": 14.430791,
+   "end": 14.575874
+  },
+  {
+   "text": "respiratoires",
+   "start": 14.587041,
+   "end": 15.189707
+  },
+  {
+   "text": "et",
+   "start": 15.200875,
+   "end": 15.267833
+  },
+  {
+   "text": "a",
+   "start": 15.279,
+   "end": 15.323625
+  },
+  {
+   "text": "déchiré",
+   "start": 15.334833,
+   "end": 15.736624
+  },
+  {
+   "text": "un",
+   "start": 15.74775,
+   "end": 15.803541
+  },
+  {
+   "text": "trou",
+   "start": 15.81475,
+   "end": 15.971
+  },
+  {
+   "text": "de",
+   "start": 15.982125,
+   "end": 16.09375
+  },
+  {
+   "text": "2 millimètres",
+   "start": 16.104916,
+   "end": 16.629458
+  },
+  {
+   "text": "dans",
+   "start": 16.640625,
+   "end": 16.71875
+  },
+  {
+   "text": "sa",
+   "start": 16.729916,
+   "end": 16.841541
+  },
+  {
+   "text": "trachée",
+   "start": 16.852666,
+   "end": 17.310249
+  },
+  {
+   "text": "Son",
+   "start": 18.0915,
+   "end": 18.314708
+  },
+  {
+   "text": "cou",
+   "start": 18.325875,
+   "end": 18.470958
+  },
+  {
+   "text": "s'est",
+   "start": 18.482125,
+   "end": 18.59375
+  },
+  {
+   "text": "mis",
+   "start": 18.604916,
+   "end": 18.738832
+  },
+  {
+   "text": "à",
+   "start": 18.75,
+   "end": 18.805791
+  },
+  {
+   "text": "gonfler",
+   "start": 18.816958,
+   "end": 19.140624
+  },
+  {
+   "text": "et",
+   "start": 19.151791,
+   "end": 19.218749
+  },
+  {
+   "text": "à",
+   "start": 19.229916,
+   "end": 19.296874
+  },
+  {
+   "text": "crépiter",
+   "start": 19.308041,
+   "end": 19.765624
+  },
+  {
+   "text": "sous",
+   "start": 19.776791,
+   "end": 19.888416
+  },
+  {
+   "text": "les",
+   "start": 19.899541,
+   "end": 19.977666
+  },
+  {
+   "text": "doigts",
+   "start": 19.988833,
+   "end": 20.278999
+  },
+  {
+   "text": "De",
+   "start": 21.049125,
+   "end": 21.227708
+  },
+  {
+   "text": "l'air",
+   "start": 21.238833,
+   "end": 21.372749
+  },
+  {
+   "text": "s'échappait",
+   "start": 21.383916,
+   "end": 21.808041
+  },
+  {
+   "text": "sous",
+   "start": 21.819208,
+   "end": 21.975458
+  },
+  {
+   "text": "sa",
+   "start": 21.986625,
+   "end": 22.09825
+  },
+  {
+   "text": "peau",
+   "start": 22.109375,
+   "end": 22.366083
+  },
+  {
+   "text": "À",
+   "start": 23.136166,
+   "end": 23.258916
+  },
+  {
+   "text": "l'hôpital",
+   "start": 23.270083,
+   "end": 23.694208
+  },
+  {
+   "text": "le",
+   "start": 23.705375,
+   "end": 23.817
+  },
+  {
+   "text": "scanner",
+   "start": 23.828125,
+   "end": 24.162958
+  },
+  {
+   "text": "a",
+   "start": 24.174125,
+   "end": 24.21875
+  },
+  {
+   "text": "confirmé",
+   "start": 24.229916,
+   "end": 24.631707
+  },
+  {
+   "text": "la",
+   "start": 24.642875,
+   "end": 24.721
+  },
+  {
+   "text": "déchirure",
+   "start": 24.732125,
+   "end": 25.357125
+  },
+  {
+   "text": "Par",
+   "start": 26.12725,
+   "end": 26.317
+  },
+  {
+   "text": "chance",
+   "start": 26.328125,
+   "end": 26.584833
+  },
+  {
+   "text": "elle",
+   "start": 26.596,
+   "end": 26.685291
+  },
+  {
+   "text": "a",
+   "start": 26.696416,
+   "end": 26.741041
+  },
+  {
+   "text": "cicatrisé",
+   "start": 26.75225,
+   "end": 27.310291
+  },
+  {
+   "text": "toute",
+   "start": 27.321416,
+   "end": 27.522291
+  },
+  {
+   "text": "seule",
+   "start": 27.5335,
+   "end": 27.712083
+  },
+  {
+   "text": "sans",
+   "start": 27.723208,
+   "end": 27.845958
+  },
+  {
+   "text": "opération",
+   "start": 27.857125,
+   "end": 28.4375
+  },
+  {
+   "text": "Et",
+   "start": 29.21875,
+   "end": 29.352666
+  },
+  {
+   "text": "ce",
+   "start": 29.363833,
+   "end": 29.464291
+  },
+  {
+   "text": "n'est",
+   "start": 29.475458,
+   "end": 29.575916
+  },
+  {
+   "text": "pas",
+   "start": 29.587041,
+   "end": 29.698666
+  },
+  {
+   "text": "le",
+   "start": 29.709833,
+   "end": 29.799124
+  },
+  {
+   "text": "premier",
+   "start": 29.81025,
+   "end": 30.055791
+  },
+  {
+   "text": "cas",
+   "start": 30.066958,
+   "end": 30.334833
+  },
+  {
+   "text": "En",
+   "start": 31.116083,
+   "end": 31.272333
+  },
+  {
+   "text": "2018 un",
+   "start": 31.2835,
+   "end": 31.975416
+  },
+  {
+   "text": "autre",
+   "start": 31.986625,
+   "end": 32.221
+  },
+  {
+   "text": "homme",
+   "start": 32.232125,
+   "end": 32.34375
+  },
+  {
+   "text": "s'était",
+   "start": 32.354916,
+   "end": 32.578124
+  },
+  {
+   "text": "déchiré",
+   "start": 32.589291,
+   "end": 32.979916
+  },
+  {
+   "text": "le",
+   "start": 32.991083,
+   "end": 33.102708
+  },
+  {
+   "text": "fond",
+   "start": 33.113833,
+   "end": 33.247749
+  },
+  {
+   "text": "de",
+   "start": 33.258916,
+   "end": 33.337041
+  },
+  {
+   "text": "la",
+   "start": 33.348208,
+   "end": 33.437499
+  },
+  {
+   "text": "gorge",
+   "start": 33.448666,
+   "end": 33.694207
+  },
+  {
+   "text": "de",
+   "start": 33.705375,
+   "end": 33.7835
+  },
+  {
+   "text": "la",
+   "start": 33.794625,
+   "end": 33.87275
+  },
+  {
+   "text": "même",
+   "start": 33.883916,
+   "end": 34.040166
+  },
+  {
+   "text": "manière",
+   "start": 34.051333,
+   "end": 34.553583
+  },
+  {
+   "text": "Alors",
+   "start": 35.334833,
+   "end": 35.602708
+  },
+  {
+   "text": "la",
+   "start": 35.613833,
+   "end": 35.691958
+  },
+  {
+   "text": "prochaine",
+   "start": 35.703125,
+   "end": 36.049125
+  },
+  {
+   "text": "fois",
+   "start": 36.06025,
+   "end": 36.227666
+  },
+  {
+   "text": "ne",
+   "start": 36.238833,
+   "end": 36.316958
+  },
+  {
+   "text": "le",
+   "start": 36.328125,
+   "end": 36.395083
+  },
+  {
+   "text": "retiens",
+   "start": 36.40625,
+   "end": 36.68525
+  },
+  {
+   "text": "pas.",
+   "start": 36.696416,
+   "end": 36.830332
+  },
+  {
+   "text": "Éternue",
+   "start": 36.8415,
+   "end": 37.142833
+  },
+  {
+   "text": "dans",
+   "start": 37.154,
+   "end": 37.254458
+  },
+  {
+   "text": "ton",
+   "start": 37.265625,
+   "end": 37.410708
+  },
+  {
+   "text": "coude",
+   "start": 37.421875,
+   "end": 37.801333
+  }
+ ]
+}
