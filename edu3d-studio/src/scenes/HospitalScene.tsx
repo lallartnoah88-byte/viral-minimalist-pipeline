@@ -7,7 +7,7 @@ import { Character } from '../engine/Character';
 import { keys, keysV, pop, ramp, type V3 } from '../engine/anim';
 import type { SceneProps } from '../engine/types';
 
-const MONITOR: V3 = [-1.7, 2.05, -1.0];
+const MONITOR: V3 = [2.7, 2.0, 0.5];
 
 const scanTexture = (marked: boolean) => {
   const w = 512;
@@ -39,7 +39,7 @@ const scanTexture = (marked: boolean) => {
     g.strokeStyle = '#ff2b2b'; g.lineWidth = 9;
     g.beginPath(); g.arc(w / 2 + 52, h / 2 - 62, 44, 0, Math.PI * 2); g.stroke();
     g.fillStyle = '#ff2b2b'; g.font = 'bold 36px "DejaVu Sans", sans-serif'; g.textAlign = 'center';
-    g.fillText('DÉCHIRURE', w / 2, h - 80);
+    g.fillText('DÉCHIRURE', w / 2, 115);
   }
   const t = new THREE.CanvasTexture(c);
   t.colorSpace = THREE.SRGBColorSpace;
@@ -57,7 +57,7 @@ export const HospitalScene: React.FC<SceneProps> = ({ f, dur, cue }) => {
   const scanX = Math.sin(f * 0.18) * 0.5;
 
   const cam = {
-    pos: keysV(f, [[0, [3.6, 2.6, 4.6]], [c0 - 4, [2.4, 2.3, 3.4]], [c0 + 8, [-0.6, 2.15, 1.3]], [dur, [-1.05, 2.1, 0.45]]]),
+    pos: keysV(f, [[0, [3.4, 2.6, 4.8]], [c0 - 4, [2.6, 2.35, 3.9]], [c0 + 8, [4.6, 2.1, 2.05]], [dur, [4.3, 2.05, 1.8]]]),
     target: keysV(f, [[0, [0.6, 1.2, 0]], [c0 - 4, [0.3, 1.3, 0]], [c0 + 8, MONITOR], [dur, MONITOR]]),
     fov: 38,
   };
@@ -121,9 +121,9 @@ export const HospitalScene: React.FC<SceneProps> = ({ f, dur, cue }) => {
           <meshBasicMaterial color="#ff3030" toneMapped={false} transparent opacity={ramp(f, 4, 12) * (1 - ramp(f, c0, c0 + 6))} />
         </mesh>
       </group>
-      <RBox size={[1.2, 0.95, 0.25]} color="#3a4652" position={[1.3, 0.55, -1.2]} radius={0.08} />
+      <RBox size={[1.2, 0.95, 0.25]} color="#3a4652" position={[-1.6, 0.55, -1.6]} radius={0.08} />
       {/* Écran de diagnostic */}
-      <group position={MONITOR} rotation={[0, 0.65, 0]}>
+      <group position={MONITOR} rotation={[0, 0.9, 0]}>
         <RBox size={[1.05, 1.28, 0.08]} color="#20262d" radius={0.05} rough={0.4} />
         <mesh position={[0, 0, 0.05]}>
           <planeGeometry args={[0.95, 1.18]} />
@@ -133,12 +133,6 @@ export const HospitalScene: React.FC<SceneProps> = ({ f, dur, cue }) => {
           <cylinderGeometry args={[0.04, 0.04, 1.0, 12]} />
           <meshStandardMaterial color="#9aa5b0" metalness={0.6} roughness={0.3} />
         </mesh>
-        {mark > 0.01 && (
-          <mesh position={[0.1, 0.14, 0.09]} scale={mark}>
-            <ringGeometry args={[0.1, 0.13, 40]} />
-            <meshBasicMaterial color="#ff2b2b" toneMapped={false} transparent opacity={0.9} />
-          </mesh>
-        )}
       </group>
       <pointLight position={[MONITOR[0] + 0.6, MONITOR[1], MONITOR[2] + 0.8]} intensity={2.2} distance={3} color="#7fd3ff" />
     </>
