@@ -1,0 +1,20 @@
+{
+  "id": "02_couper_moteur_feu",
+  "title": "Couper son moteur au feu rouge, ça consomme plus ?",
+  "voice": { "engine": "kokoro", "name": "ff_siwis", "speed": 1.12 },
+  "segments": [
+    { "id": "hook1", "gap": 0.0,  "text": "Coupe ton moteur à un feu rouge, redémarre-le, et t'as brûlé plus d'essence qu'en le laissant tourner." },
+    { "id": "hook2", "gap": 0.18, "text": "Sauf que non." },
+    { "id": "idl1",  "gap": 0.22, "text": "Au ralenti, ton moteur boit de l'essence en continu, même quand tu ne bouges pas." },
+    { "id": "idl2",  "gap": 0.16, "text": "Chaque seconde, il en injecte un peu plus." },
+    { "id": "rst1",  "gap": 0.22, "text": "Un redémarrage, lui, consomme à peu près autant que dix secondes de ralenti." },
+    { "id": "rst2",  "gap": 0.16, "text": "C'est ce qu'ont mesuré les chercheurs du laboratoire américain Argonne." },
+    { "id": "rst3",  "gap": 0.16, "text": "Donc, au-delà de dix secondes d'arrêt, couper le moteur est gagnant." },
+    { "id": "stb1",  "gap": 0.24, "text": "Et le démarreur, alors ?" },
+    { "id": "stb2",  "gap": 0.14, "text": "Sur les voitures équipées du Stop-Start, il est renforcé, tout comme la batterie, pour encaisser des milliers de démarrages." },
+    { "id": "safe1", "gap": 0.24, "text": "Seule précaution : dans la circulation, laisse le système faire le travail." },
+    { "id": "safe2", "gap": 0.14, "text": "Et coupe toi-même pour les longs arrêts, comme devant un passage à niveau." },
+    { "id": "end1",  "gap": 0.26, "text": "Félicitations, ton moteur se repose…" },
+    { "id": "end2",  "gap": 0.2,  "text": "et ton portefeuille aussi." }
+  ]
+}

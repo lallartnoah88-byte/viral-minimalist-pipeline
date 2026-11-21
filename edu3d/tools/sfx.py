@@ -296,12 +296,28 @@ def s_confetti():
     return norm(pop_ + rattle + 0.4 * s_sparkle()[: len(t)], 0.9)
 
 
+def s_coin():
+    d = 0.5
+    return norm(tone(d, 1975, 9) + 0.7 * tone(d, 2637, 11) * (t_(d) > 0.06), 0.6)
+
+
+def s_bell():
+    # sonnerie de passage à niveau (deux coups)
+    d = 0.9
+    x = np.zeros(int(d * SR))
+    for off in (0.0, 0.45):
+        b = sum(tone(0.45, f, 6) / (i + 1) for i, f in enumerate([880, 2210, 3410]))
+        i0 = int(off * SR)
+        x[i0:i0 + len(b)] += b[: len(x) - i0]
+    return norm(x, 0.6)
+
+
 LIB = {k[2:]: v for k, v in globals().items() if k.startswith("s_")}
 GAINS_DB = {  # niveaux de mix par famille
     "whoosh": -12, "whoosh_long": -13, "pop": -11, "click": -13, "tick": -14, "clock": -14, "sparkle": -15, "ice": -15,
     "start": -12, "idle": -16, "fire": -14, "scratch": -9, "thud": -10, "boom": -12, "pour": -15, "drip": -13, "bloop": -12,
     "beep": -14, "fall": -14, "clank": -10, "sputter": -11, "stall": -12, "ding": -13, "buckle": -10, "drive": -14,
-    "rise": -15, "brake": -17, "defrost": -16, "confetti": -10,
+    "rise": -15, "coin": -12, "bell": -13, "brake": -17, "defrost": -16, "confetti": -10,
 }
 
 

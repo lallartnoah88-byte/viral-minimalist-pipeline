@@ -50,7 +50,20 @@ Volontairement **non affirmés** (sources divergentes) : une durée précise « 
 
 Durée : 49 s (au-dessus de 30–45 s parce que le sujet contient 4 temps forts : idée reçue, mécanisme, origine du mythe, bonne méthode ; aucune phrase de remplissage).
 
-## 3. Créer la vidéo suivante
+## 3. Vidéo 02 — « Couper son moteur au feu rouge, ça consomme plus ? »
+
+Ouverture **directement sur le moteur qui tourne** (pas de plan extérieur) : la clé coupe le moteur dès le premier mot.
+
+**Vérification** :
+- Au-delà d'environ 10 s de ralenti, on consomme plus d'essence (et on émet plus de CO₂) qu'en redémarrant : mesures d'Argonne National Laboratory (voiture récente, 21 °C), reprises par le DOE et Ressources naturelles Canada.
+- Démarreur : pour un usage normal, peu de risque de le remplacer (Argonne) ; les véhicules Stop-Start ont démarreur et batterie renforcés.
+- Sécurité : dans la circulation, garder le moteur allumé / laisser le système automatique (recommandation de l'étude commandée par Argonne).
+
+Non affirmé : durées de vie chiffrées des démarreurs (sources peu fiables) ; le compteur à l'écran reste dans « des milliers ».
+
+Sources : energy.gov (FOTW #1239), anl.gov (« Ask a scientist »), afdc.energy.gov (idle reduction), NRCan.
+
+## 4. Créer la vidéo suivante
 
 1. Copier `videos/01_chauffer_moteur/script.json` → `videos/<nouvel_id>/script.json`, écrire la voix off (accroche « recette + *sauf que* », fin « *Félicitations…* »).
 2. Copier `scene/videos/01_chauffer_moteur.js` → `scene/videos/<nouvel_id>.js` ; réutiliser `buildGarage`, les props et `BeadFlow`, caler chaque action avec `C.w('<segment>', <n° de mot>)`.
