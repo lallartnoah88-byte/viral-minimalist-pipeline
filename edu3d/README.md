@@ -1,5 +1,7 @@
 # edu3d — vidéos TikTok éducatives en 3D
 
+Guide pas à pas (avec ou sans code) : **[GUIDE_CREATION.md](GUIDE_CREATION.md)**.
+
 Pipeline 100 % scripté : **voix off neuronale FR → scène Three.js rendue image par image → bruitages/musique synthétisés → MP4 1080×1920 30 fps**.
 
 ```bash

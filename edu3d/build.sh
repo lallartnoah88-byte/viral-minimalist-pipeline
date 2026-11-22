@@ -9,7 +9,7 @@ ID="${1:?usage: ./build.sh <video_id>}"
 B="build/$ID"; mkdir -p "$B" out .models
 
 # 1) dépendances
-[ -d node_modules/three ] || npm install --silent
+[ -d node_modules/three ] || { npm install --silent && npx playwright install chromium; }
 if [ ! -x .venv/bin/python ]; then python3 -m venv .venv; fi
 .venv/bin/pip install -q -r requirements.txt
 for f in kokoro-v1.0.onnx voices-v1.0.bin; do
